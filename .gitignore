@@ -28,3 +28,6 @@
 
 # Ignore services.yml as we keep twig in debug mode in dev and stag but not in prod
 /web/sites/*/services.yml
+
+# Ignore dstore files from MacOS
+.DS_Store
