@@ -1,0 +1,28 @@
+uuid: c2621c29-5b1a-4ccb-9efa-2426e50dc012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subjects
+    - node.type.academic_course
+    - node.type.subjects_terminology_
+id: node.academic_course.field_subjects
+field_name: field_subjects
+entity_type: node
+bundle: academic_course
+label: Subject(s)
+description: 'Add the subjects of the course in relation to worlding i.e. theories, approaches, etc.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      subjects_terminology_: subjects_terminology_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

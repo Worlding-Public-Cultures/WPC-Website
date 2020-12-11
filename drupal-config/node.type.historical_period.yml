@@ -1,0 +1,18 @@
+uuid: b19a79c3-f744-4369-a14b-f868ec88f2fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'historical period'
+type: historical_period
+description: 'Historical period(s)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

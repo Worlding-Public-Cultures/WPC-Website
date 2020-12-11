@@ -1,0 +1,28 @@
+uuid: 28212a99-88de-4c98-b0fa-4a19d12c5b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actor
+    - node.type.actor_role
+    - node.type.actors
+id: node.actor_role.field_actor
+field_name: field_actor
+entity_type: node
+bundle: actor_role
+label: actor
+description: 'Add the information about the actor'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actors: actors
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

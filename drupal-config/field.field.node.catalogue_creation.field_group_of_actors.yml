@@ -1,0 +1,28 @@
+uuid: 2d3e95ba-9b55-401a-be32-977c90df3dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_of_actors
+    - node.type.catalogue_creation
+    - node.type.institutions
+id: node.catalogue_creation.field_group_of_actors
+field_name: field_group_of_actors
+entity_type: node
+bundle: catalogue_creation
+label: Publisher
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institutions: institutions
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: b438bf37-5066-4163-b034-88b2e0b94cc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.academic_course
+  module:
+    - text
+id: node.academic_course.body
+field_name: body
+entity_type: node
+bundle: academic_course
+label: 'Summary '
+description: 'Enter a short summary of the course topic'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 15ea8af1-6008-46bf-a1e2-be06319b567e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.subjects_terminology_.field_uri_aat
+    - node.type.subjects_terminology_
+  module:
+    - user
+id: node.subjects_terminology_.teaser
+targetEntityType: node
+bundle: subjects_terminology_
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_uri_aat: true

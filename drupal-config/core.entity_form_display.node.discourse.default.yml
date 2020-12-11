@@ -1,0 +1,39 @@
+uuid: 90b47c35-1e95-4714-a8ac-8e4717907343
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.discourse.field_artist
+    - node.type.discourse
+  module:
+    - inline_entity_form
+id: node.discourse.default
+targetEntityType: node
+bundle: discourse
+mode: default
+content:
+  field_artist:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

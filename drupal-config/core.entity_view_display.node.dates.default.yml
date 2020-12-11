@@ -1,0 +1,36 @@
+uuid: c34dc8e4-5314-456e-9c65-1feaada2bf74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dates.field_not_after
+    - field.field.node.dates.field_not_before
+    - node.type.dates
+  module:
+    - datetime
+    - user
+id: node.dates.default
+targetEntityType: node
+bundle: dates
+mode: default
+content:
+  field_not_after:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_not_before:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  links: true

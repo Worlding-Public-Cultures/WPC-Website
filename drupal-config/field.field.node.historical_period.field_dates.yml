@@ -1,0 +1,28 @@
+uuid: db8a3e6e-9f67-45c3-8f9c-ad3735d31796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.dates
+    - node.type.historical_period
+id: node.historical_period.field_dates
+field_name: field_dates
+entity_type: node
+bundle: historical_period
+label: dates
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

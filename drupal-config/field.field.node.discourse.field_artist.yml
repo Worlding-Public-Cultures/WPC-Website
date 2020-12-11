@@ -1,0 +1,28 @@
+uuid: 8d5430d9-03e7-46bd-95cc-d9545edc0836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artist
+    - node.type.actor_role
+    - node.type.discourse
+id: node.discourse.field_artist
+field_name: field_artist
+entity_type: node
+bundle: discourse
+label: artist
+description: 'Enter the information about the artist, activist, or actor who has generated the discourse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_role: actor_role
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

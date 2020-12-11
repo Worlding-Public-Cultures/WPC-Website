@@ -1,0 +1,22 @@
+uuid: 53c4a643-cbe6-4c31-97e3-232faebc5513
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.traveling_exhibition.field_individual_exhibitions
+    - node.type.traveling_exhibition
+  module:
+    - user
+id: node.traveling_exhibition.teaser
+targetEntityType: node
+bundle: traveling_exhibition
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_individual_exhibitions: true

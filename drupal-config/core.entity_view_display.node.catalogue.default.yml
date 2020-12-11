@@ -1,0 +1,46 @@
+uuid: 78551847-369f-4838-9ae9-51e36a43ff47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.catalogue.field_author
+    - field.field.node.catalogue.field_group_of_actors
+    - field.field.node.catalogue.field_language
+    - node.type.catalogue
+  module:
+    - text
+    - user
+id: node.catalogue.default
+targetEntityType: node
+bundle: catalogue
+mode: default
+content:
+  field_author:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_group_of_actors:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_language:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

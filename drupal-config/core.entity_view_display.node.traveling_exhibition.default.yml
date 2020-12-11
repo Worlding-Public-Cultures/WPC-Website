@@ -1,0 +1,24 @@
+uuid: d8d4f5f6-7c94-4a6a-9afb-62f5ce729e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.traveling_exhibition.field_individual_exhibitions
+    - node.type.traveling_exhibition
+  module:
+    - user
+id: node.traveling_exhibition.default
+targetEntityType: node
+bundle: traveling_exhibition
+mode: default
+content:
+  field_individual_exhibitions:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,28 @@
+uuid: c1ed0c08-f05a-4a05-8070-77e3876f60ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creator
+    - node.type.actor_role
+    - node.type.object_production
+id: node.object_production.field_creator
+field_name: field_creator
+entity_type: node
+bundle: object_production
+label: Creator
+description: 'Enter the information about the actor(s) who created the object even it they are anonymous '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_role: actor_role
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

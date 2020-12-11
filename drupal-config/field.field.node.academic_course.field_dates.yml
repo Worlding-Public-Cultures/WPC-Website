@@ -1,0 +1,28 @@
+uuid: 684f1876-2cfa-4b28-8766-282d4ac5466a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.academic_course
+    - node.type.dates
+id: node.academic_course.field_dates
+field_name: field_dates
+entity_type: node
+bundle: academic_course
+label: dates
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: d03e7e14-93aa-4e41-81ee-f44c5374b56f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uri_aat
+    - node.type.cultures
+  module:
+    - link
+id: node.cultures.field_uri_aat
+field_name: field_uri_aat
+entity_type: node
+bundle: cultures
+label: 'URI AAT'
+description: 'Enter the URI of the vocabulary term used to describe the culture. I.e. African American, British Caribbean, Mayan, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

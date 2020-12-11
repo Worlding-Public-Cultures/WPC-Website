@@ -1,0 +1,28 @@
+uuid: 528982c9-7bfe-4c65-b81f-92e821142e75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_culture
+    - node.type.cultures
+    - node.type.exhibition
+id: node.exhibition.field_culture
+field_name: field_culture
+entity_type: node
+bundle: exhibition
+label: culture
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cultures: cultures
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

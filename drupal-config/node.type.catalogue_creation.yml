@@ -1,0 +1,18 @@
+uuid: bf74220f-6199-4977-ae54-db5c949d14d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Publication production'
+type: catalogue_creation
+description: 'Enter bibliographic data about a publication, book, catalogue, conference proceedings etc.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

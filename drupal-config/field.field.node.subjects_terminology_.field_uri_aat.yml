@@ -1,0 +1,23 @@
+uuid: c8eee4da-ccf6-48ae-bab2-b59cae48956d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uri_aat
+    - node.type.subjects_terminology_
+  module:
+    - link
+id: node.subjects_terminology_.field_uri_aat
+field_name: field_uri_aat
+entity_type: node
+bundle: subjects_terminology_
+label: 'URI AAT'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

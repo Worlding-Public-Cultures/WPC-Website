@@ -1,0 +1,20 @@
+uuid: 28ce04a9-cd75-4eee-ade8-312ee6f45933
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_academic_professional_titl
+field_name: field_academic_professional_titl
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

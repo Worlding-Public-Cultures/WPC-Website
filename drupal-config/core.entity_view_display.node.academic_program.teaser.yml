@@ -1,0 +1,26 @@
+uuid: d953eb7f-3303-457d-914a-2a0f0ff70233
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.academic_program.field_course
+    - field.field.node.academic_program.field_title
+    - field.field.node.academic_program.field_type_of_program
+    - node.type.academic_program
+  module:
+    - user
+id: node.academic_program.teaser
+targetEntityType: node
+bundle: academic_program
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_course: true
+  field_title: true
+  field_type_of_program: true

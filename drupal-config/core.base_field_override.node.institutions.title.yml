@@ -1,0 +1,18 @@
+uuid: 65d5f724-4e1f-40b1-932f-f1c9a3abf098
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.institutions
+id: node.institutions.title
+field_name: title
+entity_type: node
+bundle: institutions
+label: 'Organisation, institution, group'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

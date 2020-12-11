@@ -1,0 +1,28 @@
+uuid: 95a3e932-7e2e-436d-af7d-7a05130c12ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actor
+    - node.type.academic_course
+    - node.type.actor_role
+id: node.academic_course.field_actor
+field_name: field_actor
+entity_type: node
+bundle: academic_course
+label: Instructor
+description: 'Enter the information about the instructor(s) of the course'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_role: actor_role
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: 37b09400-b9c7-446f-9970-7cb0fb36f412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_object_creation
+    - node.type.object_production
+    - node.type.objects
+id: node.objects.field_object_creation
+field_name: field_object_creation
+entity_type: node
+bundle: objects
+label: 'object production'
+description: 'Enter information about the creation of the object such as dates, place, creator, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      object_production: object_production
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

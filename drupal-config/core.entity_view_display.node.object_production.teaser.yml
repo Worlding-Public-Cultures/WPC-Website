@@ -1,0 +1,26 @@
+uuid: a23eff20-8d84-4db0-b2c6-2266c875b54b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.object_production.field_creator
+    - field.field.node.object_production.field_dates
+    - field.field.node.object_production.field_place
+    - node.type.object_production
+  module:
+    - user
+id: node.object_production.teaser
+targetEntityType: node
+bundle: object_production
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_creator: true
+  field_dates: true
+  field_place: true

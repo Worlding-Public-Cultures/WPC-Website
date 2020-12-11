@@ -1,0 +1,18 @@
+uuid: 19bbfb2c-835a-4f32-85cf-2ed7c4eeed9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.discourse
+id: node.discourse.title
+field_name: title
+entity_type: node
+bundle: discourse
+label: Discourse
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

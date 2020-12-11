@@ -1,0 +1,23 @@
+uuid: aa636401-2517-4dd7-9f74-0ea1bf1e1dae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uri_viaf
+    - node.type.institutions
+  module:
+    - link
+id: node.institutions.field_uri_viaf
+field_name: field_uri_viaf
+entity_type: node
+bundle: institutions
+label: URI_VIAF
+description: 'Enter the URI of the VIAF entry of the vocabulary term used to describe the organisation, institution, public body, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

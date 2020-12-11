@@ -1,0 +1,28 @@
+uuid: d6a258d5-4a9b-4981-8831-a75047037c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historical_period
+    - node.type.exhibition
+    - node.type.historical_period
+id: node.exhibition.field_historical_period
+field_name: field_historical_period
+entity_type: node
+bundle: exhibition
+label: 'historical period'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      historical_period: historical_period
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: b2228a0a-26a0-4f5f-b43c-f2e7646cff09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.academic_program
+  module:
+    - text
+id: node.academic_program.field_title
+field_name: field_title
+entity_type: node
+bundle: academic_program
+label: title
+description: 'Add the title of the program. If in a language other than English, enter the title in original language and the English translation'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,52 @@
+uuid: 70c1d895-b5dc-4bc6-8a5c-5a53a5af02f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.object_production.field_creator
+    - field.field.node.object_production.field_dates
+    - field.field.node.object_production.field_place
+    - node.type.object_production
+id: node.object_production.default
+targetEntityType: node
+bundle: object_production
+mode: default
+content:
+  field_creator:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_dates:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_place:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

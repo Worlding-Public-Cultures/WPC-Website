@@ -1,0 +1,58 @@
+uuid: 8c4fc7f6-ad3a-494b-9a5d-467be2c73c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_place_name
+    - field.field.node.place.field_place_type
+    - field.field.node.place.field_tgn_uri
+    - node.type.place
+  module:
+    - link
+    - text
+    - user
+id: node.place.default
+targetEntityType: node
+bundle: place
+mode: default
+content:
+  field_coordinates:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_place_name:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_place_type:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tgn_uri:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  links: true

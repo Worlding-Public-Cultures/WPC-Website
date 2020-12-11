@@ -1,0 +1,28 @@
+uuid: f063ce63-6359-495a-a5b4-0ed7dc59a122
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_place_name
+    - field.field.node.place.field_place_type
+    - field.field.node.place.field_tgn_uri
+    - node.type.place
+  module:
+    - user
+id: node.place.teaser
+targetEntityType: node
+bundle: place
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_coordinates: true
+  field_place_name: true
+  field_place_type: true
+  field_tgn_uri: true

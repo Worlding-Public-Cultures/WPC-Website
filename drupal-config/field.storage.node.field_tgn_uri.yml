@@ -1,0 +1,19 @@
+uuid: 800bcca2-4318-4a22-a39e-c9ea29b00809
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_tgn_uri
+field_name: field_tgn_uri
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

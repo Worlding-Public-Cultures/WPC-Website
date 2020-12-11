@@ -1,0 +1,18 @@
+uuid: adc2ab03-0bbb-4eb6-b28c-11c46ce5be16
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.academic_course
+id: node.academic_course.title
+field_name: title
+entity_type: node
+bundle: academic_course
+label: 'Academic course'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: 008fa7b6-c31c-40b2-8142-d1474f0cebc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.institutions.field_name
+    - field.field.node.institutions.field_uri_viaf
+    - node.type.institutions
+  module:
+    - link
+    - text
+id: node.institutions.default
+targetEntityType: node
+bundle: institutions
+mode: default
+content:
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_uri_viaf:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

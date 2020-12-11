@@ -1,0 +1,57 @@
+uuid: 432a6d58-20fe-4aa6-9ac0-ab071c4db0dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_place_name
+    - field.field.node.place.field_place_type
+    - field.field.node.place.field_tgn_uri
+    - node.type.place
+  module:
+    - link
+    - text
+id: node.place.default
+targetEntityType: node
+bundle: place
+mode: default
+content:
+  field_coordinates:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_place_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_place_type:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tgn_uri:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

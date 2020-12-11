@@ -1,0 +1,24 @@
+uuid: 9eafebea-6ed8-4116-a54d-233be6ccee80
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dates.field_not_after
+    - field.field.node.dates.field_not_before
+    - node.type.dates
+  module:
+    - user
+id: node.dates.teaser
+targetEntityType: node
+bundle: dates
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_not_after: true
+  field_not_before: true

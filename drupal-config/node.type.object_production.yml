@@ -1,0 +1,18 @@
+uuid: bdcc4d54-c8aa-4dfe-8d11-00bf87c2dcba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: object_production
+type: object_production
+description: 'event of production/creation of an object'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

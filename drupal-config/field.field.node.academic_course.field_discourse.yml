@@ -1,0 +1,28 @@
+uuid: c7c9115c-cb21-4b45-b5da-d8212374dfcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discourse
+    - node.type.academic_course
+    - node.type.discourse
+id: node.academic_course.field_discourse
+field_name: field_discourse
+entity_type: node
+bundle: academic_course
+label: discourse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      discourse: discourse
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

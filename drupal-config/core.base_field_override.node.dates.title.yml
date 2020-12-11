@@ -1,0 +1,18 @@
+uuid: ff64ba9e-f5ab-4d6a-a6d2-091b00909ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dates
+id: node.dates.title
+field_name: title
+entity_type: node
+bundle: dates
+label: 'Date range'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

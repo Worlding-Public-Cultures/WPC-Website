@@ -1,0 +1,21 @@
+uuid: e74a20ab-b238-4528-a228-b9d7104341c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.sponsor
+  module:
+    - text
+id: node.sponsor.field_type
+field_name: field_type
+entity_type: node
+bundle: sponsor
+label: type
+description: 'Enter the type of sponsor'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

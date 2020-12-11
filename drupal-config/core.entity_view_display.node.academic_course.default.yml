@@ -1,0 +1,170 @@
+uuid: 0b36365a-dd55-4572-8407-25bda1293641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.academic_course.body
+    - field.field.node.academic_course.field_actor
+    - field.field.node.academic_course.field_assignment
+    - field.field.node.academic_course.field_catalogue_production
+    - field.field.node.academic_course.field_country
+    - field.field.node.academic_course.field_culture
+    - field.field.node.academic_course.field_dates
+    - field.field.node.academic_course.field_discourse
+    - field.field.node.academic_course.field_historical_period
+    - field.field.node.academic_course.field_individual_exhibitions
+    - field.field.node.academic_course.field_institution
+    - field.field.node.academic_course.field_language
+    - field.field.node.academic_course.field_location
+    - field.field.node.academic_course.field_objects
+    - field.field.node.academic_course.field_reference
+    - field.field.node.academic_course.field_subjects
+    - field.field.node.academic_course.field_title
+    - node.type.academic_course
+  module:
+    - text
+    - user
+id: node.academic_course.default
+targetEntityType: node
+bundle: academic_course
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actor:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_assignment:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_catalogue_production:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_country:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_culture:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dates:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_discourse:
+    weight: 118
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_historical_period:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_individual_exhibitions:
+    weight: 116
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_institution:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_language:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_objects:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_reference:
+    weight: 117
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_subjects:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

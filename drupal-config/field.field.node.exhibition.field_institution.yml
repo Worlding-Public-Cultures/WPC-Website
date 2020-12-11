@@ -1,0 +1,28 @@
+uuid: 72812fe2-8802-4769-badd-e9f9720b046b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution
+    - node.type.exhibition
+    - node.type.institutions
+id: node.exhibition.field_institution
+field_name: field_institution
+entity_type: node
+bundle: exhibition
+label: institution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institutions: institutions
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

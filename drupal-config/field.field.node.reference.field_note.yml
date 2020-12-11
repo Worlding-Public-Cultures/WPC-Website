@@ -1,0 +1,21 @@
+uuid: f5b8273d-742e-4e95-9867-8a662bbfb732
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_note
+    - node.type.reference
+  module:
+    - text
+id: node.reference.field_note
+field_name: field_note
+entity_type: node
+bundle: reference
+label: Note
+description: 'Enter a note only if you more than one source of information has been used to collect data entered'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

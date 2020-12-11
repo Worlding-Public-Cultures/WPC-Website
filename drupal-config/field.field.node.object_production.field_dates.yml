@@ -1,0 +1,30 @@
+uuid: f348787f-df94-4a53-b788-66cf45811cee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.dates
+    - node.type.historical_period
+    - node.type.object_production
+id: node.object_production.field_dates
+field_name: field_dates
+entity_type: node
+bundle: object_production
+label: Dates
+description: 'Enter the date range and historical period of when the object was created'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+      historical_period: historical_period
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: dates
+field_type: entity_reference

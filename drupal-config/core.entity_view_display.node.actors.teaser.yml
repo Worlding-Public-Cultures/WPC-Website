@@ -1,0 +1,26 @@
+uuid: 04b513b9-85cb-4d42-b370-790b87aa0b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actors.field_academic_professional_titl
+    - field.field.node.actors.field_institutions
+    - field.field.node.actors.field_name
+    - node.type.actors
+  module:
+    - user
+id: node.actors.teaser
+targetEntityType: node
+bundle: actors
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_academic_professional_titl: true
+  field_institutions: true
+  field_name: true

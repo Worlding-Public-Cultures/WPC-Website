@@ -1,0 +1,28 @@
+uuid: 64feaf96-8d51-4030-b2bc-224b5661fe92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.objects.field_accession_number
+    - field.field.node.objects.field_link
+    - field.field.node.objects.field_object_creation
+    - field.field.node.objects.field_title
+    - node.type.objects
+  module:
+    - user
+id: node.objects.teaser
+targetEntityType: node
+bundle: objects
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_accession_number: true
+  field_link: true
+  field_object_creation: true
+  field_title: true

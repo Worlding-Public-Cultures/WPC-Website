@@ -1,0 +1,21 @@
+uuid: a646af0c-f1f9-449c-a6bc-aec7b87059b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_type
+    - node.type.place
+  module:
+    - text
+id: node.place.field_place_type
+field_name: field_place_type
+entity_type: node
+bundle: place
+label: 'Place type'
+description: 'Enter the type of place i.e. city, province, country, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

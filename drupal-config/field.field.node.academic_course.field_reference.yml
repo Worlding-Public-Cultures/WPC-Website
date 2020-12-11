@@ -1,0 +1,28 @@
+uuid: ab7a2168-ac1c-433d-bcdb-01e6ad5802d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference
+    - node.type.academic_course
+    - node.type.reference
+id: node.academic_course.field_reference
+field_name: field_reference
+entity_type: node
+bundle: academic_course
+label: 'Source '
+description: 'Enter the information about the source(s) data has been collected'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reference: reference
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

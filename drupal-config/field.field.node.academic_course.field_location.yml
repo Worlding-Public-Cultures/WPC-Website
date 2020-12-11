@@ -1,0 +1,28 @@
+uuid: b8223add-8078-4bc0-aaca-fdbf9326b961
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.academic_course
+    - node.type.place
+id: node.academic_course.field_location
+field_name: field_location
+entity_type: node
+bundle: academic_course
+label: location
+description: 'Enter the location of the institution responsible for the course'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      place: place
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

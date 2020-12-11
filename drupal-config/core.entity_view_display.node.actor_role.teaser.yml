@@ -1,0 +1,24 @@
+uuid: b4b0519c-cc65-4993-ab79-e093d59273a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actor_role.field_actor
+    - field.field.node.actor_role.field_uri_aat
+    - node.type.actor_role
+  module:
+    - user
+id: node.actor_role.teaser
+targetEntityType: node
+bundle: actor_role
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_actor: true
+  field_uri_aat: true

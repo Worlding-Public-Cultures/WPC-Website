@@ -1,0 +1,37 @@
+uuid: 863fcb57-85e5-4aae-a0e2-e34186c6d612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.assignment.field_type
+    - node.type.assignment
+  module:
+    - text
+id: node.assignment.default
+targetEntityType: node
+bundle: assignment
+mode: default
+content:
+  field_type:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

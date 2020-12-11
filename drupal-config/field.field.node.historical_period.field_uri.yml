@@ -1,0 +1,23 @@
+uuid: d09acb55-f78e-4408-b102-45063cf00457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uri
+    - node.type.historical_period
+  module:
+    - link
+id: node.historical_period.field_uri
+field_name: field_uri
+entity_type: node
+bundle: historical_period
+label: URI
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

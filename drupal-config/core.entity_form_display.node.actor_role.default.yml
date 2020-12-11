@@ -1,0 +1,45 @@
+uuid: 9ba60239-db57-4829-b151-74c6cf0a0a0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor_role.field_actor
+    - field.field.node.actor_role.field_uri_aat
+    - node.type.actor_role
+  module:
+    - inline_entity_form
+    - link
+id: node.actor_role.default
+targetEntityType: node
+bundle: actor_role
+mode: default
+content:
+  field_actor:
+    weight: 1
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_uri_aat:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

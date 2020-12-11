@@ -1,0 +1,21 @@
+uuid: 07d0ac65-a257-4415-a71b-b24385f1f057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_not_after
+    - node.type.dates
+  module:
+    - datetime
+id: node.dates.field_not_after
+field_name: field_not_after
+entity_type: node
+bundle: dates
+label: 'not after'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,46 @@
+uuid: aca0cbd7-1392-4adf-b442-2c16c33c2cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.object_production.field_creator
+    - field.field.node.object_production.field_dates
+    - field.field.node.object_production.field_place
+    - node.type.object_production
+  module:
+    - user
+id: node.object_production.default
+targetEntityType: node
+bundle: object_production
+mode: default
+content:
+  field_creator:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dates:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_place:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

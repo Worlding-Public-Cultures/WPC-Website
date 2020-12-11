@@ -1,0 +1,80 @@
+uuid: 2f84fd65-9c11-4704-b0a9-2fd762ef9c6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reference.field_copyright_info
+    - field.field.node.reference.field_link
+    - field.field.node.reference.field_note
+    - node.type.reference
+  module:
+    - text
+id: node.reference.default
+targetEntityType: node
+bundle: reference
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_copyright_info:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_note:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: false
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: false
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_link: true
+  path: true

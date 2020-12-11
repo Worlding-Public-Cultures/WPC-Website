@@ -1,0 +1,18 @@
+uuid: ad86a334-bea0-4673-bbfb-777433d8a93d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.catalogue
+id: node.catalogue.title
+field_name: title
+entity_type: node
+bundle: catalogue
+label: 'Publication title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

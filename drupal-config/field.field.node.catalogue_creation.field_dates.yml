@@ -1,0 +1,28 @@
+uuid: 993b4a13-6541-45bc-acc5-52a0dce03b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.catalogue_creation
+    - node.type.dates
+id: node.catalogue_creation.field_dates
+field_name: field_dates
+entity_type: node
+bundle: catalogue_creation
+label: dates
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

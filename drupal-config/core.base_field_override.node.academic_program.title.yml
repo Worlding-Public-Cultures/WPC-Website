@@ -1,0 +1,18 @@
+uuid: 2804950a-51ef-4f44-9592-8bd17c05fe44
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.academic_program
+id: node.academic_program.title
+field_name: title
+entity_type: node
+bundle: academic_program
+label: 'Academic program'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

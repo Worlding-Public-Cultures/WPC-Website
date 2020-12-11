@@ -1,0 +1,28 @@
+uuid: 6c54e697-2dad-4f3d-944a-b827b8295303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.academic_course
+    - node.type.place
+id: node.academic_course.field_country
+field_name: field_country
+entity_type: node
+bundle: academic_course
+label: Country/territory
+description: 'Add the countries and/or geographical territories covered in the course'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      place: place
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

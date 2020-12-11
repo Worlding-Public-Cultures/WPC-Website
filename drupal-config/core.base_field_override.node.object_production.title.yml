@@ -1,0 +1,18 @@
+uuid: 8b8efd25-efc3-4a7b-af5a-3f87c90086c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.object_production
+id: node.object_production.title
+field_name: title
+entity_type: node
+bundle: object_production
+label: 'Object production information'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

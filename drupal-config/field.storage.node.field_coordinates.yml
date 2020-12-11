@@ -1,0 +1,20 @@
+uuid: d63c3ef9-fed2-4adb-ab03-f1cec1c0caa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_coordinates
+field_name: field_coordinates
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

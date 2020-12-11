@@ -1,0 +1,28 @@
+uuid: 45a71428-15fe-4ffc-b48d-ebb1bf891088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_individual_exhibitions
+    - node.type.exhibition
+    - node.type.traveling_exhibition
+id: node.traveling_exhibition.field_individual_exhibitions
+field_name: field_individual_exhibitions
+entity_type: node
+bundle: traveling_exhibition
+label: 'individual exhibitions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      exhibition: exhibition
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

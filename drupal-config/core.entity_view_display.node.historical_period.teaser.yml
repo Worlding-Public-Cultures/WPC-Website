@@ -1,0 +1,24 @@
+uuid: 565d5bc0-6bae-437c-8e33-0d8484f0f022
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.historical_period.field_dates
+    - field.field.node.historical_period.field_uri
+    - node.type.historical_period
+  module:
+    - user
+id: node.historical_period.teaser
+targetEntityType: node
+bundle: historical_period
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dates: true
+  field_uri: true

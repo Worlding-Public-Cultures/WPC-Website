@@ -1,0 +1,21 @@
+uuid: a335ddef-574c-49ab-81ca-4d966afa1f22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accession_number
+    - node.type.objects
+  module:
+    - text
+id: node.objects.field_accession_number
+field_name: field_accession_number
+entity_type: node
+bundle: objects
+label: 'accession number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

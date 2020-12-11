@@ -1,0 +1,23 @@
+uuid: 6671d639-2261-4803-be08-7dbd766abf54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.objects
+  module:
+    - link
+id: node.objects.field_link
+field_name: field_link
+entity_type: node
+bundle: objects
+label: link
+description: 'Enter link of holding institution object page'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,41 @@
+uuid: 5dd3c524-32ad-43f0-b871-d85481b11dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.historical_period.field_dates
+    - field.field.node.historical_period.field_uri
+    - node.type.historical_period
+  module:
+    - link
+id: node.historical_period.default
+targetEntityType: node
+bundle: historical_period
+mode: default
+content:
+  field_dates:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_uri:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

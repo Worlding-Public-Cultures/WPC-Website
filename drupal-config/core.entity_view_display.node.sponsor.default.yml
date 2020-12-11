@@ -1,0 +1,33 @@
+uuid: 192b2831-678c-432b-ac58-e5d488bdabc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sponsor.field_group_of_actors
+    - field.field.node.sponsor.field_type
+    - node.type.sponsor
+  module:
+    - text
+    - user
+id: node.sponsor.default
+targetEntityType: node
+bundle: sponsor
+mode: default
+content:
+  field_group_of_actors:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true

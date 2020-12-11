@@ -1,0 +1,18 @@
+uuid: 8a1ceede-bdf8-490e-b9e7-1a8f18b2d84a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: discourse
+type: discourse
+description: 'Discourse and conceptual ideas of an artist or author'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

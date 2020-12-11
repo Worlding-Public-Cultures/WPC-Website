@@ -1,0 +1,35 @@
+uuid: b9877fa2-3f53-4310-a088-fe9bba71e985
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dates.field_not_after
+    - field.field.node.dates.field_not_before
+    - node.type.dates
+  module:
+    - datetime
+id: node.dates.default
+targetEntityType: node
+bundle: dates
+mode: default
+content:
+  field_not_after:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_not_before:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

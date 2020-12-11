@@ -1,0 +1,28 @@
+uuid: 045c11f6-dfec-42ac-84d3-f584cb51cbc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creator
+    - node.type.actor_role
+    - node.type.exhibition
+id: node.exhibition.field_creator
+field_name: field_creator
+entity_type: node
+bundle: exhibition
+label: artist
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_role: actor_role
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: actor_role
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 3ee4ff53-c612-4254-93db-56c36b79dbe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.assignment
+  module:
+    - text
+id: node.assignment.field_type
+field_name: field_type
+entity_type: node
+bundle: assignment
+label: type
+description: 'Type of assignment'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

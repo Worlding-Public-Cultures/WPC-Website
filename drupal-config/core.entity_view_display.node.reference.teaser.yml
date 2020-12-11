@@ -1,0 +1,26 @@
+uuid: 1ca1b7a2-a733-47b5-a1b1-dbc463076bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reference.field_copyright_info
+    - field.field.node.reference.field_link
+    - field.field.node.reference.field_note
+    - node.type.reference
+  module:
+    - user
+id: node.reference.teaser
+targetEntityType: node
+bundle: reference
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_copyright_info: true
+  field_link: true
+  field_note: true

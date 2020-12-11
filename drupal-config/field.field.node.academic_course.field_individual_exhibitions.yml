@@ -1,0 +1,28 @@
+uuid: ba48caec-e2ce-4ebe-9ab2-c633c78013cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_individual_exhibitions
+    - node.type.academic_course
+    - node.type.exhibition
+id: node.academic_course.field_individual_exhibitions
+field_name: field_individual_exhibitions
+entity_type: node
+bundle: academic_course
+label: Exhibition
+description: 'Enter information about exhibitions studied in the course'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      exhibition: exhibition
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

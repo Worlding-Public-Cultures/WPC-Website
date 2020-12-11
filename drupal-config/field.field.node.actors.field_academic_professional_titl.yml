@@ -1,0 +1,21 @@
+uuid: 893579e6-5e1e-4646-903a-ef3af5794236
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academic_professional_titl
+    - node.type.actors
+  module:
+    - text
+id: node.actors.field_academic_professional_titl
+field_name: field_academic_professional_titl
+entity_type: node
+bundle: actors
+label: academic-professional-title
+description: 'Enter the academic or professional title of the actor (if any) i.e. professor, assistant professor'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

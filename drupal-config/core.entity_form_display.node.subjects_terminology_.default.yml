@@ -1,0 +1,37 @@
+uuid: 7f0e9055-92ed-41d2-8f89-725d566a2759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subjects_terminology_.field_uri_aat
+    - node.type.subjects_terminology_
+  module:
+    - link
+id: node.subjects_terminology_.default
+targetEntityType: node
+bundle: subjects_terminology_
+mode: default
+content:
+  field_uri_aat:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

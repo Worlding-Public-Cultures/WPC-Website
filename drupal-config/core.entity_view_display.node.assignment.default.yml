@@ -1,0 +1,24 @@
+uuid: d5a08d77-19d0-4efa-8fed-6dc790b286b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.assignment.field_type
+    - node.type.assignment
+  module:
+    - text
+    - user
+id: node.assignment.default
+targetEntityType: node
+bundle: assignment
+mode: default
+content:
+  field_type:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,38 @@
+uuid: 28b01fe5-5176-4eca-83cf-088d094b59d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reference.field_copyright_info
+    - field.field.node.reference.field_link
+    - field.field.node.reference.field_note
+    - node.type.reference
+  module:
+    - text
+    - user
+id: node.reference.default
+targetEntityType: node
+bundle: reference
+mode: default
+content:
+  field_copyright_info:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_note:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_link: true

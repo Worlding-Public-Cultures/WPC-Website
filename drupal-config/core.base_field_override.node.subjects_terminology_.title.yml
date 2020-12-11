@@ -1,0 +1,18 @@
+uuid: f159c55d-7d2a-47fc-9352-44a79fef99fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.subjects_terminology_
+id: node.subjects_terminology_.title
+field_name: title
+entity_type: node
+bundle: subjects_terminology_
+label: Subject
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

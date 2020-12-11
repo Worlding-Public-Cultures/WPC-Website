@@ -1,0 +1,28 @@
+uuid: e01ab4ba-2c49-4fd8-aea6-b6c6a54ba9a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.dates
+    - node.type.exhibition
+id: node.exhibition.field_dates
+field_name: field_dates
+entity_type: node
+bundle: exhibition
+label: dates
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

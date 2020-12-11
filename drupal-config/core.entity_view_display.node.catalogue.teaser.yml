@@ -1,0 +1,26 @@
+uuid: 07976b91-3d3e-4c08-8b39-07fdda927c54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.catalogue.field_author
+    - field.field.node.catalogue.field_group_of_actors
+    - field.field.node.catalogue.field_language
+    - node.type.catalogue
+  module:
+    - user
+id: node.catalogue.teaser
+targetEntityType: node
+bundle: catalogue
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author: true
+  field_group_of_actors: true
+  field_language: true

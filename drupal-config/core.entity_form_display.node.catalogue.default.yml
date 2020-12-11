@@ -1,0 +1,66 @@
+uuid: 17af0034-5220-4df0-a377-80d55f769b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.catalogue.field_author
+    - field.field.node.catalogue.field_group_of_actors
+    - field.field.node.catalogue.field_language
+    - node.type.catalogue
+  module:
+    - inline_entity_form
+    - text
+id: node.catalogue.default
+targetEntityType: node
+bundle: catalogue
+mode: default
+content:
+  field_author:
+    weight: 1
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_group_of_actors:
+    weight: 3
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_language:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

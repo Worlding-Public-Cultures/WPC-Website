@@ -1,0 +1,21 @@
+uuid: 44b12ef4-b1ac-45af-b9a9-45b5b460936f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright_info
+    - node.type.reference
+  module:
+    - text
+id: node.reference.field_copyright_info
+field_name: field_copyright_info
+entity_type: node
+bundle: reference
+label: 'Copyright Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

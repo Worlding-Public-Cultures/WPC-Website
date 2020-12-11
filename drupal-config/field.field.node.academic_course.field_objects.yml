@@ -1,0 +1,28 @@
+uuid: 8d0be230-2d88-4821-b98b-be7668096d65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objects
+    - node.type.academic_course
+    - node.type.objects
+id: node.academic_course.field_objects
+field_name: field_objects
+entity_type: node
+bundle: academic_course
+label: Object
+description: 'Enter information about objects studied in the course (if any)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      objects: objects
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,60 @@
+uuid: 41daffcd-af3a-4748-a5d7-ce4fbcd6e786
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.objects.field_accession_number
+    - field.field.node.objects.field_link
+    - field.field.node.objects.field_object_creation
+    - field.field.node.objects.field_title
+    - node.type.objects
+  module:
+    - inline_entity_form
+    - text
+id: node.objects.default
+targetEntityType: node
+bundle: objects
+mode: default
+content:
+  field_accession_number:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_object_creation:
+    weight: 2
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  field_link: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true

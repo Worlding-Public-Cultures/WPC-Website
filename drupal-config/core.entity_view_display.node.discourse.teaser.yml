@@ -1,0 +1,22 @@
+uuid: e9e0c612-3c54-4386-8bb7-77737f6f5594
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.discourse.field_artist
+    - node.type.discourse
+  module:
+    - user
+id: node.discourse.teaser
+targetEntityType: node
+bundle: discourse
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_artist: true

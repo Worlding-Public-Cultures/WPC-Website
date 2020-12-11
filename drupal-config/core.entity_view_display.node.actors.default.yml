@@ -1,0 +1,45 @@
+uuid: f8128652-e2e6-4e16-8fb4-15dd16495e6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actors.field_academic_professional_titl
+    - field.field.node.actors.field_institutions
+    - field.field.node.actors.field_name
+    - node.type.actors
+  module:
+    - text
+    - user
+id: node.actors.default
+targetEntityType: node
+bundle: actors
+mode: default
+content:
+  field_academic_professional_titl:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_institutions:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_name:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

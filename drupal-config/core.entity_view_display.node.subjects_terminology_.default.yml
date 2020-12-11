@@ -1,0 +1,29 @@
+uuid: 1b42d8e9-4e03-49fd-a08c-68d632109717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subjects_terminology_.field_uri_aat
+    - node.type.subjects_terminology_
+  module:
+    - link
+    - user
+id: node.subjects_terminology_.default
+targetEntityType: node
+bundle: subjects_terminology_
+mode: default
+content:
+  field_uri_aat:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  links: true

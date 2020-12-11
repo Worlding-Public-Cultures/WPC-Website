@@ -1,0 +1,18 @@
+uuid: 7f12ca6e-2f6e-4f5f-83bd-b5044dc5a591
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.catalogue_creation
+id: node.catalogue_creation.title
+field_name: title
+entity_type: node
+bundle: catalogue_creation
+label: 'Bibliographic information'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

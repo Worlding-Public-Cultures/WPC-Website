@@ -1,0 +1,23 @@
+uuid: 44c4d0b0-72c3-4e00-8175-b37bbda53a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uri_aat
+    - node.type.actor_role
+  module:
+    - link
+id: node.actor_role.field_uri_aat
+field_name: field_uri_aat
+entity_type: node
+bundle: actor_role
+label: 'URI AAT'
+description: 'Enter the URI of the vocabulary term used to describe the role of the actor. I.e. exhibition curator, art historian, instructor, speaker, activist. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,21 @@
+uuid: 1ef0f2eb-91f3-4d43-9295-cb7eea012094
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_name
+    - node.type.place
+  module:
+    - text
+id: node.place.field_place_name
+field_name: field_place_name
+entity_type: node
+bundle: place
+label: 'Place name'
+description: 'Enter the name of the place'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

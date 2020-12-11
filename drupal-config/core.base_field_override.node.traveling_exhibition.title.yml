@@ -1,0 +1,18 @@
+uuid: 353c8146-c5a0-47fd-b6c5-4dc29562b3f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.traveling_exhibition
+id: node.traveling_exhibition.title
+field_name: title
+entity_type: node
+bundle: traveling_exhibition
+label: 'Traveling exhibition'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

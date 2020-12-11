@@ -1,0 +1,38 @@
+uuid: 16029c28-5507-42e4-92ab-ad6dd225e103
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cultures.field_name
+    - field.field.node.cultures.field_uri_aat
+    - node.type.cultures
+  module:
+    - link
+    - text
+    - user
+id: node.cultures.default
+targetEntityType: node
+bundle: cultures
+mode: default
+content:
+  field_name:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_uri_aat:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  links: true

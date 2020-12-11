@@ -1,0 +1,21 @@
+uuid: fa119481-6a5b-4c80-a662-b823837abac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.institutions
+  module:
+    - text
+id: node.institutions.field_name
+field_name: field_name
+entity_type: node
+bundle: institutions
+label: name
+description: 'Enter the name of the group, organisation, institution, etc.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
