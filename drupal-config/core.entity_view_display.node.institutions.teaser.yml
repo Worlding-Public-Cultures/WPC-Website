@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.institutions.field_name
     - field.field.node.institutions.field_uri_viaf
     - node.type.institutions
   module:
@@ -20,5 +19,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_name: true
   field_uri_viaf: true

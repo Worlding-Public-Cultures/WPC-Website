@@ -1,0 +1,28 @@
+uuid: 7f1a7ede-95fc-4100-a5aa-5c45cc89ca88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.place
+    - node.type.public_event
+id: node.public_event.field_place
+field_name: field_place
+entity_type: node
+bundle: public_event
+label: Place
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      place: place
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

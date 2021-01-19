@@ -1,0 +1,28 @@
+uuid: 93d56ac3-3fe1-4011-be84-17e6e56b1e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objects
+    - node.type.objects
+    - node.type.public_event
+id: node.public_event.field_objects
+field_name: field_objects
+entity_type: node
+bundle: public_event
+label: Object(s)
+description: 'Add the object(s) addressed in the public event (if any).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      objects: objects
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

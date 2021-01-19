@@ -1,0 +1,28 @@
+uuid: ea1e9224-4e82-4ec2-a178-c0487c3af3f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference
+    - node.type.public_event
+    - node.type.reference
+id: node.public_event.field_reference
+field_name: field_reference
+entity_type: node
+bundle: public_event
+label: 'Source '
+description: 'Enter the links where the data has been sourced from and copyright information'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reference: reference
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

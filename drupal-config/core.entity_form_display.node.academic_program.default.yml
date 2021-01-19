@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.academic_program.field_course
-    - field.field.node.academic_program.field_title
     - field.field.node.academic_program.field_type_of_program
     - node.type.academic_program
   module:
@@ -17,12 +16,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_course:
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       form_mode: default
@@ -38,16 +37,8 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_title:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
   field_type_of_program:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -58,12 +49,20 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -75,4 +74,3 @@ hidden:
   path: true
   promote: true
   sticky: true
-  title: true

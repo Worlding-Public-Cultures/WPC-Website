@@ -8,7 +8,7 @@ id: node.traveling_exhibition.title
 field_name: title
 entity_type: node
 bundle: traveling_exhibition
-label: 'Traveling exhibition'
+label: 'Traveling exhibition title'
 description: ''
 required: true
 translatable: true

@@ -10,8 +10,8 @@ id: node.exhibition.field_subjects
 field_name: field_subjects
 entity_type: node
 bundle: exhibition
-label: subjects
-description: ''
+label: Subject(s)
+description: 'Enter the terms used in the exhibition to describe the theories, approaches, disciplines, etc.'
 required: false
 translatable: false
 default_value: {  }

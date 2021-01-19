@@ -8,7 +8,7 @@ id: node.place.title
 field_name: title
 entity_type: node
 bundle: place
-label: 'Place '
+label: 'Place name'
 description: ''
 required: true
 translatable: true

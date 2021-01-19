@@ -8,7 +8,7 @@ id: node.historical_period.title
 field_name: title
 entity_type: node
 bundle: historical_period
-label: 'Historical period(s)'
+label: 'Historical period(s) term'
 description: ''
 required: true
 translatable: true

@@ -13,8 +13,8 @@ class ComposerStaticInit877adea0c84ce140c4565da2f2cdc37f
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -41,6 +41,10 @@ class ComposerStaticInit877adea0c84ce140c4565da2f2cdc37f
     );
 
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpGPX\\' => 7,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -86,6 +90,7 @@ class ComposerStaticInit877adea0c84ce140c4565da2f2cdc37f
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Shapefile\\' => 10,
             'SelfUpdate\\' => 11,
         ),
         'R' => 
@@ -162,6 +167,10 @@ class ComposerStaticInit877adea0c84ce140c4565da2f2cdc37f
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpGPX\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sibyx/phpgpx/src/phpGPX',
+        ),
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
@@ -297,6 +306,10 @@ class ComposerStaticInit877adea0c84ce140c4565da2f2cdc37f
         'Symfony\\Bridge\\PsrHttpMessage\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
+        ),
+        'Shapefile\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gasparesganga/php-shapefile/src/Shapefile',
         ),
         'SelfUpdate\\' => 
         array (

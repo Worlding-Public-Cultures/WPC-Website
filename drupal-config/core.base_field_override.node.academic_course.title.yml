@@ -8,7 +8,7 @@ id: node.academic_course.title
 field_name: title
 entity_type: node
 bundle: academic_course
-label: 'Academic course'
+label: Title
 description: ''
 required: true
 translatable: true

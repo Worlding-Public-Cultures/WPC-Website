@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'cultures (terminology)'
+name: 'Cultures (terminology)'
 type: cultures
 description: 'Culture(s) and ethnic group(s)'
 help: ''

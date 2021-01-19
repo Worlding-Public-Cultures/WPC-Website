@@ -8,7 +8,7 @@ id: node.actor_role.title
 field_name: title
 entity_type: node
 bundle: actor_role
-label: Actor
+label: 'Role '
 description: ''
 required: true
 translatable: true

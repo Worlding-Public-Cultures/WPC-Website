@@ -8,7 +8,7 @@ id: node.subjects_terminology_.title
 field_name: title
 entity_type: node
 bundle: subjects_terminology_
-label: Subject
+label: 'Subject terminology'
 description: ''
 required: true
 translatable: true

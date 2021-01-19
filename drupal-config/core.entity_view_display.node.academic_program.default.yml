@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.academic_program.field_course
-    - field.field.node.academic_program.field_title
     - field.field.node.academic_program.field_type_of_program
     - node.type.academic_program
   module:
@@ -22,13 +21,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_title:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_type_of_program:
     weight: 103

@@ -13,7 +13,7 @@ bundle: discourse
 mode: default
 content:
   field_artist:
-    weight: 0
+    weight: 1
     settings:
       match_operator: CONTAINS
       form_mode: default
@@ -29,11 +29,18 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   path: true
   promote: true
   status: true
   sticky: true
-  title: true
   uid: true

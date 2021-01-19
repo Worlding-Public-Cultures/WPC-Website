@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.actors.field_academic_professional_titl
     - field.field.node.actors.field_institutions
-    - field.field.node.actors.field_name
     - node.type.actors
   module:
     - user
@@ -23,4 +22,3 @@ content:
 hidden:
   field_academic_professional_titl: true
   field_institutions: true
-  field_name: true

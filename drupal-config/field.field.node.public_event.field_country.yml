@@ -1,0 +1,28 @@
+uuid: 8b7df10a-d65a-4e6f-8c4e-994d2ee0396e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.place
+    - node.type.public_event
+id: node.public_event.field_country
+field_name: field_country
+entity_type: node
+bundle: public_event
+label: Country/region
+description: 'Enter the names of the countries or geographic regions addressed by the public event'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      place: place
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

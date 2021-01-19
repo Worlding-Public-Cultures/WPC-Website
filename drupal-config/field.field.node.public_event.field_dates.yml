@@ -1,0 +1,28 @@
+uuid: f1cc6dc3-22ce-41d8-80f2-eaa373079f9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.dates
+    - node.type.public_event
+id: node.public_event.field_dates
+field_name: field_dates
+entity_type: node
+bundle: public_event
+label: Dates
+description: 'Dates when the event happened'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dates: dates
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

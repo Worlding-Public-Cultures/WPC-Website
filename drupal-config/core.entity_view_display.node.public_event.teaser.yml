@@ -1,0 +1,48 @@
+uuid: 0798905b-9899-4dbe-bf46-2449d82ccc64
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.public_event.field_actor
+    - field.field.node.public_event.field_country
+    - field.field.node.public_event.field_creator
+    - field.field.node.public_event.field_culture
+    - field.field.node.public_event.field_dates
+    - field.field.node.public_event.field_group_of_actors
+    - field.field.node.public_event.field_historical_period
+    - field.field.node.public_event.field_individual_exhibitions
+    - field.field.node.public_event.field_objects
+    - field.field.node.public_event.field_place
+    - field.field.node.public_event.field_publication_s_
+    - field.field.node.public_event.field_reference
+    - field.field.node.public_event.field_sponsor
+    - field.field.node.public_event.field_subjects
+    - node.type.public_event
+  module:
+    - user
+id: node.public_event.teaser
+targetEntityType: node
+bundle: public_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_actor: true
+  field_country: true
+  field_creator: true
+  field_culture: true
+  field_dates: true
+  field_group_of_actors: true
+  field_historical_period: true
+  field_individual_exhibitions: true
+  field_objects: true
+  field_place: true
+  field_publication_s_: true
+  field_reference: true
+  field_sponsor: true
+  field_subjects: true

@@ -10,7 +10,7 @@ id: node.exhibition.field_country
 field_name: field_country
 entity_type: node
 bundle: exhibition
-label: country
+label: Country/territory
 description: ''
 required: false
 translatable: false

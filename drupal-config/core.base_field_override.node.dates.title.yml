@@ -8,7 +8,7 @@ id: node.dates.title
 field_name: title
 entity_type: node
 bundle: dates
-label: 'Date range'
+label: 'Dates range'
 description: ''
 required: true
 translatable: true

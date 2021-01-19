@@ -8,7 +8,7 @@ id: node.cultures.title
 field_name: title
 entity_type: node
 bundle: cultures
-label: Culture
+label: 'Culture(s) Term'
 description: ''
 required: true
 translatable: true

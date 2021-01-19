@@ -31,3 +31,6 @@
 
 # Ignore dstore files from MacOS
 .DS_Store
+
+# Ignore DDEV environment files
+.ddev

@@ -15,19 +15,6 @@ bundle: catalogue_creation
 mode: default
 content:
   field_actor:
-    weight: 0
-    settings:
-      form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
-    third_party_settings: {  }
-    type: inline_entity_form_simple
-    region: content
-  field_dates:
     weight: 1
     settings:
       form_mode: default
@@ -40,8 +27,8 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_simple
     region: content
-  field_group_of_actors:
-    weight: 26
+  field_dates:
+    weight: 2
     settings:
       form_mode: default
       revision: false
@@ -53,11 +40,31 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_simple
     region: content
+  field_group_of_actors:
+    weight: 3
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   path: true
   promote: true
   status: true
   sticky: true
-  title: true
   uid: true

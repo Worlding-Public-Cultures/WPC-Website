@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.historical_period.field_uri
     - node.type.historical_period
   module:
+    - inline_entity_form
     - link
 id: node.historical_period.default
 targetEntityType: node
@@ -16,26 +17,36 @@ content:
   field_dates:
     weight: 0
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     region: content
   field_uri:
-    weight: 1
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   path: true
   promote: true
   status: true
   sticky: true
-  title: true
   uid: true

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.actors.field_academic_professional_titl
     - field.field.node.actors.field_institutions
-    - field.field.node.actors.field_name
     - node.type.actors
   module:
     - inline_entity_form
@@ -16,7 +15,7 @@ bundle: actors
 mode: default
 content:
   field_academic_professional_titl:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -24,7 +23,7 @@ content:
     type: text_textfield
     region: content
   field_institutions:
-    weight: 2
+    weight: 3
     settings:
       form_mode: default
       revision: false
@@ -36,19 +35,18 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_simple
     region: content
-  field_name:
+  title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
 hidden:
   created: true
   path: true
   promote: true
   status: true
   sticky: true
-  title: true
   uid: true

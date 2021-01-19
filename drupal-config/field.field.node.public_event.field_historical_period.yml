@@ -1,0 +1,28 @@
+uuid: ec431bb6-c305-4630-b24d-6951bb6bc1d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_historical_period
+    - node.type.historical_period
+    - node.type.public_event
+id: node.public_event.field_historical_period
+field_name: field_historical_period
+entity_type: node
+bundle: public_event
+label: 'Historical Period(s)'
+description: 'Enter the terminology used to define the historical period(s) addressed by the public event'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      historical_period: historical_period
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

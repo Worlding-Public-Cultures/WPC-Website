@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.place.field_coordinates
-    - field.field.node.place.field_place_name
     - field.field.node.place.field_place_type
     - field.field.node.place.field_tgn_uri
     - node.type.place
@@ -27,13 +26,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: content
-  field_place_name:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_place_type:
     weight: 2

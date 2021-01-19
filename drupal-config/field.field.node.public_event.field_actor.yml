@@ -1,0 +1,28 @@
+uuid: 00ee3988-c3ff-4321-aed5-d5708993ba22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actor
+    - node.type.actor_role
+    - node.type.public_event
+id: node.public_event.field_actor
+field_name: field_actor
+entity_type: node
+bundle: public_event
+label: Actor(s)
+description: 'Enter the information about the actors (speakers, activists, artists, etc.)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_role: actor_role
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

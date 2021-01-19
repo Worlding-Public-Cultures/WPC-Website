@@ -1,0 +1,28 @@
+uuid: ac8c054c-c12a-4e59-884e-b0f18c0a9f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor
+    - node.type.public_event
+    - node.type.sponsor
+id: node.public_event.field_sponsor
+field_name: field_sponsor
+entity_type: node
+bundle: public_event
+label: Sponsor
+description: 'Enter the information about the funder(s) and sponsor(s) information if any.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

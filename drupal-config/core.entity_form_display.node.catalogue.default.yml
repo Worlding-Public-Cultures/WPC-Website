@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.catalogue.field_author
     - field.field.node.catalogue.field_group_of_actors
     - field.field.node.catalogue.field_language
+    - field.field.node.catalogue.field_worldcat_link
     - node.type.catalogue
   module:
     - inline_entity_form
+    - link
     - text
 id: node.catalogue.default
 targetEntityType: node
@@ -16,7 +18,7 @@ bundle: catalogue
 mode: default
 content:
   field_author:
-    weight: 1
+    weight: 2
     settings:
       form_mode: default
       revision: false
@@ -29,7 +31,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_group_of_actors:
-    weight: 3
+    weight: 4
     settings:
       form_mode: default
       revision: false
@@ -42,12 +44,20 @@ content:
     type: inline_entity_form_simple
     region: content
   field_language:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
+  field_worldcat_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   title:
     type: string_textfield

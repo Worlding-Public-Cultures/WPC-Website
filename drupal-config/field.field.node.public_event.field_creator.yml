@@ -1,0 +1,28 @@
+uuid: 96030043-7db4-4585-81d3-3e6823558fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creator
+    - node.type.discourse
+    - node.type.public_event
+id: node.public_event.field_creator
+field_name: field_creator
+entity_type: node
+bundle: public_event
+label: Artist(s)
+description: 'Enter the information about the artist(s) addressed by the public event'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      discourse: discourse
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

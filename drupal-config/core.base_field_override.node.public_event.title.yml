@@ -1,0 +1,18 @@
+uuid: 4c60ee5e-5625-4ffd-9b76-99491f20ecfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.public_event
+id: node.public_event.title
+field_name: title
+entity_type: node
+bundle: public_event
+label: 'Public event title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
