@@ -1,4 +1,5 @@
 module:
+  auto_entitylabel: 0
   block: 0
   breakpoint: 0
   config: 0
@@ -21,6 +22,7 @@ module:
   shortcut: 0
   system: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0

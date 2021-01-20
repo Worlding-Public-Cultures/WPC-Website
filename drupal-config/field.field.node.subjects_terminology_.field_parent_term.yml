@@ -1,0 +1,27 @@
+uuid: f612ae8b-cae9-49d1-9fc2-fc0d0c714b8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_term
+    - node.type.subjects_terminology_
+id: node.subjects_terminology_.field_parent_term
+field_name: field_parent_term
+entity_type: node
+bundle: subjects_terminology_
+label: 'parent term'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      subjects_terminology_: subjects_terminology_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

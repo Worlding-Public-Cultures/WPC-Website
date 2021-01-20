@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.subjects_terminology_.field_parent_term
     - field.field.node.subjects_terminology_.field_uri_aat
     - node.type.subjects_terminology_
   module:
@@ -12,6 +13,16 @@ targetEntityType: node
 bundle: subjects_terminology_
 mode: default
 content:
+  field_parent_term:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_uri_aat:
     weight: 1
     settings:
