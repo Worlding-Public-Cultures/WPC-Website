@@ -1,17 +1,17 @@
-uuid: 31e99835-ca32-48ab-90c1-bb721654d0bb
+uuid: b23ca613-928b-4980-be45-2cfeb4b05bf7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_institution
+    - field.storage.node.field_publication_s_
     - node.type.academic_course
-    - node.type.institutions
-id: node.academic_course.field_institution
-field_name: field_institution
+    - node.type.catalogue
+id: node.academic_course.field_publication_s_
+field_name: field_publication_s_
 entity_type: node
 bundle: academic_course
-label: institution
-description: 'Add the institution or organisation responsible for the course'
+label: Publication(s)
+description: 'Enter the bibliographic data of the publication(s) and texts studied in the course'
 required: false
 translatable: true
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      institutions: institutions
+      catalogue: catalogue
     sort:
       field: _none
     auto_create: false

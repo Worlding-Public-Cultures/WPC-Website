@@ -6,17 +6,16 @@ dependencies:
     - field.field.node.academic_course.body
     - field.field.node.academic_course.field_actor
     - field.field.node.academic_course.field_assignment
-    - field.field.node.academic_course.field_catalogue_production
     - field.field.node.academic_course.field_country
     - field.field.node.academic_course.field_culture
     - field.field.node.academic_course.field_dates
     - field.field.node.academic_course.field_discourse
     - field.field.node.academic_course.field_historical_period
     - field.field.node.academic_course.field_individual_exhibitions
-    - field.field.node.academic_course.field_institution
-    - field.field.node.academic_course.field_language
+    - field.field.node.academic_course.field_languages
     - field.field.node.academic_course.field_location
     - field.field.node.academic_course.field_objects
+    - field.field.node.academic_course.field_publication_s_
     - field.field.node.academic_course.field_reference
     - field.field.node.academic_course.field_subjects
     - node.type.academic_course
@@ -51,14 +50,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_catalogue_production:
-    weight: 111
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_country:
     weight: 113
     label: above
@@ -78,10 +69,9 @@ content:
   field_dates:
     weight: 102
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_id
     region: content
   field_discourse:
     weight: 118
@@ -107,20 +97,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_institution:
-    weight: 109
+  field_languages:
+    weight: 121
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_language:
-    weight: 115
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_location:
     weight: 110
@@ -132,6 +115,14 @@ content:
     region: content
   field_objects:
     weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_publication_s_:
+    weight: 119
     label: above
     settings:
       link: true
@@ -156,7 +147,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

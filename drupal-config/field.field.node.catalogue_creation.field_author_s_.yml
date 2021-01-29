@@ -1,19 +1,19 @@
-uuid: 34ed3a1d-ce7f-4bf9-9636-62e5bd87ec38
+uuid: ddb34477-c544-429a-99f4-af24e6c9ea2c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_actor
+    - field.storage.node.field_author_s_
     - node.type.actor_role
     - node.type.catalogue_creation
-id: node.catalogue_creation.field_actor
-field_name: field_actor
+id: node.catalogue_creation.field_author_s_
+field_name: field_author_s_
 entity_type: node
 bundle: catalogue_creation
-label: actor
-description: ''
+label: author(s)
+description: 'Enter the information about the author(s) of the publication'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_catalogue
-    - node.type.catalogue_creation
+    - node.type.catalogue
     - node.type.exhibition
 id: node.exhibition.field_catalogue
 field_name: field_catalogue
 entity_type: node
 bundle: exhibition
 label: catalogue
-description: ''
+description: 'Enter the bibliographic information about the exhibition catalogue'
 required: false
 translatable: false
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      catalogue_creation: catalogue_creation
+      catalogue: catalogue
     sort:
       field: _none
     auto_create: false

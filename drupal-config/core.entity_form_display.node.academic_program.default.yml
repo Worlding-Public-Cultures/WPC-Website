@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.academic_program.field_course
+    - field.field.node.academic_program.field_institution
     - field.field.node.academic_program.field_type_of_program
     - node.type.academic_program
   module:
@@ -23,22 +24,35 @@ content:
   field_course:
     weight: 3
     settings:
-      match_operator: CONTAINS
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: course
       label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
       allow_existing: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_type_of_program:
+  field_institution:
     weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: ''
+      label_plural: ''
+      revision: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+  field_type_of_program:
+    weight: 1
     settings:
       size: 60
       placeholder: ''

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.catalogue_creation.field_actor
+    - field.field.node.catalogue_creation.field_author_s_
     - field.field.node.catalogue_creation.field_dates
     - field.field.node.catalogue_creation.field_group_of_actors
     - node.type.catalogue_creation
@@ -14,8 +14,8 @@ targetEntityType: node
 bundle: catalogue_creation
 mode: default
 content:
-  field_actor:
-    weight: 0
+  field_author_s_:
+    weight: 5
     label: above
     settings:
       link: true
@@ -39,7 +39,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 2
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

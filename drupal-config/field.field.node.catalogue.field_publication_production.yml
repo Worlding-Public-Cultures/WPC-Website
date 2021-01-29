@@ -1,17 +1,17 @@
-uuid: 59e5436c-795a-418a-91fe-3694e0fe4bd4
+uuid: 430e741c-abc7-4fb1-952e-6eb1dc00df4f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_author
-    - node.type.actors
+    - field.storage.node.field_publication_production
     - node.type.catalogue
-id: node.catalogue.field_author
-field_name: field_author
+    - node.type.catalogue_creation
+id: node.catalogue.field_publication_production
+field_name: field_publication_production
 entity_type: node
 bundle: catalogue
-label: author
-description: 'Enter the information about the author(s) of the publication'
+label: 'publication production'
+description: 'Enter the bibliographic data of the publication.'
 required: false
 translatable: false
 default_value: {  }
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      actors: actors
+      catalogue_creation: catalogue_creation
     sort:
       field: _none
     auto_create: false

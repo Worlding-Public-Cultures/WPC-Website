@@ -1,11 +1,11 @@
-uuid: e427cf22-e56e-4100-b358-cfab4408d263
+uuid: 9bb81fba-eda3-40ef-b07e-473d78d47613
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_parent_term
-field_name: field_parent_term
+id: node.field_publication_production
+field_name: field_publication_production
 entity_type: node
 type: entity_reference
 settings:

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.subjects_terminology_.field_parent_term
     - field.field.node.subjects_terminology_.field_uri_aat
     - node.type.subjects_terminology_
   module:
@@ -20,5 +19,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_parent_term: true
   field_uri_aat: true

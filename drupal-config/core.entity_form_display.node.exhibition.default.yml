@@ -34,15 +34,15 @@ content:
     weight: 12
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: catalogue
       label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
       allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -51,15 +51,15 @@ content:
     weight: 9
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: country/territory
       label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -68,15 +68,15 @@ content:
     weight: 6
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: artist
       label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -85,15 +85,15 @@ content:
     weight: 7
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: culture
       label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
+      allow_new: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -132,15 +132,15 @@ content:
     weight: 8
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: 'historical period'
       label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
+      allow_new: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -175,15 +175,15 @@ content:
     weight: 11
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: object
       label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -205,15 +205,15 @@ content:
     weight: 5
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: sponsor
       label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
@@ -222,15 +222,15 @@ content:
     weight: 10
     settings:
       form_mode: default
-      revision: false
-      override_labels: false
-      label_singular: ''
+      override_labels: true
+      label_singular: subject
       label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
+      allow_new: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex

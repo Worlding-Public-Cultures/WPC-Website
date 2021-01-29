@@ -1,11 +1,11 @@
-uuid: 6a913f65-ee5b-4351-86f5-fb542b7b76c3
+uuid: ab86b910-7c03-4778-bdcf-af496b4b5191
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_catalogue_production
-field_name: field_catalogue_production
+id: node.field_author_s_
+field_name: field_author_s_
 entity_type: node
 type: entity_reference
 settings:

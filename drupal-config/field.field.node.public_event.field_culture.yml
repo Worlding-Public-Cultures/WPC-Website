@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_culture
-    - node.type.cultures
     - node.type.public_event
+    - node.type.subjects_terminology_
 id: node.public_event.field_culture
 field_name: field_culture
 entity_type: node
@@ -20,9 +20,9 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      cultures: cultures
+      subjects_terminology_: subjects_terminology_
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: cultures
 field_type: entity_reference

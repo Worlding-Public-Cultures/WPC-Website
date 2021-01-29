@@ -3,42 +3,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.catalogue.field_author
-    - field.field.node.catalogue.field_group_of_actors
-    - field.field.node.catalogue.field_language
+    - field.field.node.catalogue.field_publication_production
     - field.field.node.catalogue.field_worldcat_link
     - node.type.catalogue
   module:
     - link
-    - text
     - user
 id: node.catalogue.default
 targetEntityType: node
 bundle: catalogue
 mode: default
 content:
-  field_author:
-    weight: 102
+  field_publication_production:
+    weight: 108
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_group_of_actors:
-    weight: 106
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_language:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_worldcat_link:
     weight: 107

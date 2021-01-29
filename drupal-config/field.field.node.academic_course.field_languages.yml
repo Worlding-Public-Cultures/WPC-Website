@@ -1,15 +1,16 @@
-uuid: f612ae8b-cae9-49d1-9fc2-fc0d0c714b8e
+uuid: 0f837674-6d5a-4927-89bb-776bf6175826
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_parent_term
+    - field.storage.node.field_languages
+    - node.type.academic_course
     - node.type.subjects_terminology_
-id: node.subjects_terminology_.field_parent_term
-field_name: field_parent_term
+id: node.academic_course.field_languages
+field_name: field_languages
 entity_type: node
-bundle: subjects_terminology_
-label: 'parent term'
+bundle: academic_course
+label: language
 description: ''
 required: false
 translatable: false

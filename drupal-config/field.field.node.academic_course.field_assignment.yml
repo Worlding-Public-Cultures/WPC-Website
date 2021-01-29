@@ -11,7 +11,7 @@ field_name: field_assignment
 entity_type: node
 bundle: academic_course
 label: Assignment
-description: ''
+description: 'Enter information about the assignment(s) in the course '
 required: false
 translatable: false
 default_value: {  }
