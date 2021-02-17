@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.historical_period.field_dates
+    - field.field.node.historical_period.field_place
     - field.field.node.historical_period.field_uri
     - node.type.historical_period
   module:
@@ -16,6 +17,14 @@ mode: default
 content:
   field_dates:
     weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_place:
+    weight: 104
     label: above
     settings:
       link: true

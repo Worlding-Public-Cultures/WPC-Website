@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_geolocation
     - field.field.node.place.field_place_type
     - field.field.node.place.field_tgn_uri
     - node.type.place
   module:
+    - geolocation_leaflet
     - link
     - text
 id: node.place.default
@@ -15,12 +16,30 @@ targetEntityType: node
 bundle: place
 mode: default
 content:
-  field_coordinates:
-    weight: 3
+  field_geolocation:
+    weight: 26
     settings:
-      placeholder: ''
+      centre:
+        fit_bounds:
+          enable: true
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      hide_textfield_form: false
+      leaflet_settings:
+        map_features:
+          leaflet_control_zoom:
+            enabled: true
+          leaflet_marker_popup:
+            enabled: true
+          leaflet_control_geocoder:
+            enabled: true
+            weight: -100
+        zoom: '10'
+        height: 400px
+        width: 100%
     third_party_settings: {  }
-    type: number
+    type: geolocation_leaflet
     region: content
   field_place_type:
     weight: 1

@@ -1,5 +1,6 @@
 module:
   address: 0
+  allowed_formats: 0
   auto_entitylabel: 0
   block: 0
   breakpoint: 0
@@ -9,9 +10,12 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  geolocation: 0
+  geolocation_leaflet: 0
   inline_entity_form: 0
   link: 0
   menu_link_content: 0

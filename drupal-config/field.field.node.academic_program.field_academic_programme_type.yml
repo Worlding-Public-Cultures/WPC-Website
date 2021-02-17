@@ -1,0 +1,25 @@
+uuid: 96b3cbda-a172-4e10-a8ed-9684ef8ddc5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academic_programme_type
+    - node.type.academic_program
+id: node.academic_program.field_academic_programme_type
+field_name: field_academic_programme_type
+entity_type: node
+bundle: academic_program
+label: 'Academic programme type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_4
+      arguments: {  }
+field_type: entity_reference

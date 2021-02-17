@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.academic_program.field_academic_programme_type
     - field.field.node.academic_program.field_course
     - field.field.node.academic_program.field_institution
-    - field.field.node.academic_program.field_type_of_program
     - node.type.academic_program
   module:
     - user
@@ -21,6 +21,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_academic_programme_type: true
   field_course: true
   field_institution: true
-  field_type_of_program: true

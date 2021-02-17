@@ -1,19 +1,18 @@
-uuid: d63c3ef9-fed2-4adb-ab03-f1cec1c0caa4
+uuid: f830e03e-8921-4499-a24a-9d60517961d8
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_coordinates
-field_name: field_coordinates
+id: node.field_broader_term
+field_name: field_broader_term
 entity_type: node
-type: decimal
+type: entity_reference
 settings:
-  precision: 10
-  scale: 2
+  target_type: node
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

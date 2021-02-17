@@ -10,7 +10,7 @@ id: node.academic_course.field_historical_period
 field_name: field_historical_period
 entity_type: node
 bundle: academic_course
-label: 'Historical Period(s)'
+label: 'Periods, Cultures, Territories'
 description: 'Enter the historical periods studied in the course.'
 required: false
 translatable: true

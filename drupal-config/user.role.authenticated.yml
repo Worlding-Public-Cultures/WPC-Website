@@ -11,3 +11,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'use text format custom'
+  - 'use text format simple_text'

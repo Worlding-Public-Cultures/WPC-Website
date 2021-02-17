@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.exhibition.field_catalogue
-    - field.field.node.exhibition.field_country
     - field.field.node.exhibition.field_creator
-    - field.field.node.exhibition.field_culture
     - field.field.node.exhibition.field_curator
     - field.field.node.exhibition.field_dates
     - field.field.node.exhibition.field_historical_period
@@ -18,22 +16,67 @@ dependencies:
     - field.field.node.exhibition.field_subjects
     - node.type.exhibition
   module:
+    - field_group
     - user
+third_party_settings:
+  field_group:
+    group_classification:
+      children:
+        - field_historical_period
+        - field_subjects
+        - field_reference
+      parent_name: group_parent
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+      label: classification
+    group_location:
+      children:
+        - links
+        - field_curator
+        - field_creator
+        - field_catalogue
+        - field_objects
+        - field_dates
+        - field_location
+        - field_sponsor
+        - field_institution
+      parent_name: group_parent
+      weight: 1
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        id: ''
+        classes: ''
+      label: location
+    group_parent:
+      children:
+        - group_location
+        - group_classification
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+        effect: none
+      label: parent
 id: node.exhibition.default
 targetEntityType: node
 bundle: exhibition
 mode: default
 content:
   field_catalogue:
-    weight: 105
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_country:
-    weight: 115
+    weight: 4
     label: above
     settings:
       link: true
@@ -41,15 +84,7 @@ content:
     type: entity_reference_label
     region: content
   field_creator:
-    weight: 103
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_culture:
-    weight: 104
+    weight: 3
     label: above
     settings:
       link: true
@@ -57,7 +92,7 @@ content:
     type: entity_reference_label
     region: content
   field_curator:
-    weight: 102
+    weight: 2
     label: above
     settings:
       link: true
@@ -65,7 +100,7 @@ content:
     type: entity_reference_label
     region: content
   field_dates:
-    weight: 108
+    weight: 6
     label: above
     settings:
       link: true
@@ -73,7 +108,7 @@ content:
     type: entity_reference_label
     region: content
   field_historical_period:
-    weight: 113
+    weight: 9
     label: above
     settings:
       link: true
@@ -81,7 +116,7 @@ content:
     type: entity_reference_label
     region: content
   field_institution:
-    weight: 112
+    weight: 9
     label: above
     settings:
       link: true
@@ -89,7 +124,7 @@ content:
     type: entity_reference_label
     region: content
   field_location:
-    weight: 109
+    weight: 7
     label: above
     settings:
       link: true
@@ -97,7 +132,7 @@ content:
     type: entity_reference_label
     region: content
   field_objects:
-    weight: 107
+    weight: 5
     label: above
     settings:
       link: true
@@ -105,7 +140,7 @@ content:
     type: entity_reference_label
     region: content
   field_reference:
-    weight: 117
+    weight: 11
     label: above
     settings:
       link: true
@@ -113,7 +148,7 @@ content:
     type: entity_reference_label
     region: content
   field_sponsor:
-    weight: 110
+    weight: 8
     label: above
     settings:
       link: true
@@ -121,7 +156,7 @@ content:
     type: entity_reference_label
     region: content
   field_subjects:
-    weight: 116
+    weight: 10
     label: above
     settings:
       link: true
@@ -129,8 +164,8 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

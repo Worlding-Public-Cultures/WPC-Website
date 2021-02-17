@@ -5,9 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.exhibition.field_catalogue
-    - field.field.node.exhibition.field_country
     - field.field.node.exhibition.field_creator
-    - field.field.node.exhibition.field_culture
     - field.field.node.exhibition.field_curator
     - field.field.node.exhibition.field_dates
     - field.field.node.exhibition.field_historical_period
@@ -32,9 +30,7 @@ content:
     region: content
 hidden:
   field_catalogue: true
-  field_country: true
   field_creator: true
-  field_culture: true
   field_curator: true
   field_dates: true
   field_historical_period: true

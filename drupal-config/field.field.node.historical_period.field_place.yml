@@ -1,17 +1,17 @@
-uuid: 6c54e697-2dad-4f3d-944a-b827b8295303
+uuid: 1192d9c6-92a4-4e13-9513-bdbe44f2dea1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_country
-    - node.type.academic_course
+    - field.storage.node.field_place
+    - node.type.historical_period
     - node.type.place
-id: node.academic_course.field_country
-field_name: field_country
+id: node.historical_period.field_place
+field_name: field_place
 entity_type: node
-bundle: academic_course
-label: Country/territory
-description: 'Add the countries and/or geographical territories covered in the course'
+bundle: historical_period
+label: Place
+description: ''
 required: false
 translatable: true
 default_value: {  }

@@ -3,23 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.actors.field_academic_professional_titl
+    - field.field.node.actors.field_academic_title
     - field.field.node.actors.field_institutions
     - node.type.actors
   module:
-    - text
     - user
 id: node.actors.default
 targetEntityType: node
 bundle: actors
 mode: default
 content:
-  field_academic_professional_titl:
-    weight: 102
+  field_academic_title:
+    weight: 104
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    type: text_default
+    type: entity_reference_label
     region: content
   field_institutions:
     weight: 103

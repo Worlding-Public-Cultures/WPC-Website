@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.actor_role.field_actor
-    - field.field.node.actor_role.field_uri_aat
+    - field.field.node.actor_role.field_role_type
     - node.type.actor_role
   module:
     - inline_entity_form
-    - link
 id: node.actor_role.default
 targetEntityType: node
 bundle: actor_role
@@ -18,22 +17,28 @@ content:
     weight: 2
     settings:
       form_mode: default
+      override_labels: true
+      label_singular: actor
+      label_plural: actors
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
       revision: false
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
       collapsible: false
       collapsed: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: inline_entity_form_simple
+    type: inline_entity_form_complex
     region: content
-  field_uri_aat:
+  field_role_type:
     weight: 1
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: link_default
+    type: entity_reference_autocomplete
     region: content
   title:
     type: string_textfield

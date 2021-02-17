@@ -1,17 +1,16 @@
-uuid: 28ce04a9-cd75-4eee-ade8-312ee6f45933
+uuid: 85aa2f58-7936-4f3f-ad4f-b16c21de0964
 langcode: en
 status: true
 dependencies:
   module:
+    - geolocation
     - node
-    - text
-id: node.field_academic_professional_titl
-field_name: field_academic_professional_titl
+id: node.field_geolocation
+field_name: field_geolocation
 entity_type: node
-type: text
-settings:
-  max_length: 255
-module: text
+type: geolocation
+settings: {  }
+module: geolocation
 locked: false
 cardinality: 1
 translatable: true

@@ -1,15 +1,15 @@
-uuid: 0f837674-6d5a-4927-89bb-776bf6175826
+uuid: 85ba545c-08df-473d-9270-4b85793bc8d3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_languages
-    - node.type.academic_course
-id: node.academic_course.field_languages
-field_name: field_languages
+    - field.storage.node.field_academic_title
+    - node.type.actors
+id: node.actors.field_academic_title
+field_name: field_academic_title
 entity_type: node
-bundle: academic_course
-label: language
+bundle: actors
+label: 'academic title'
 description: ''
 required: false
 translatable: false
@@ -20,6 +20,6 @@ settings:
   handler_settings:
     view:
       view_name: entity_reference_terminology
-      display_name: entity_reference_3
+      display_name: entity_reference_5
       arguments: {  }
 field_type: entity_reference

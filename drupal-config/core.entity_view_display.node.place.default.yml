@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_geolocation
     - field.field.node.place.field_place_type
     - field.field.node.place.field_tgn_uri
     - node.type.place
   module:
+    - geolocation
     - link
     - text
     - user
@@ -16,16 +17,12 @@ targetEntityType: node
 bundle: place
 mode: default
 content:
-  field_coordinates:
-    weight: 0
+  field_geolocation:
+    weight: 4
     label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
+    settings: {  }
     third_party_settings: {  }
-    type: number_decimal
+    type: geolocation_latlng
     region: content
   field_place_type:
     weight: 2

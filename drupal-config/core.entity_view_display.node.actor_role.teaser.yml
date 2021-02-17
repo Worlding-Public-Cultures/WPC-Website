@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.actor_role.field_actor
-    - field.field.node.actor_role.field_uri_aat
+    - field.field.node.actor_role.field_role_type
     - node.type.actor_role
   module:
     - user
@@ -21,4 +21,4 @@ content:
     region: content
 hidden:
   field_actor: true
-  field_uri_aat: true
+  field_role_type: true

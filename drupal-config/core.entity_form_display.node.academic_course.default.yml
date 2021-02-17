@@ -6,8 +6,6 @@ dependencies:
     - field.field.node.academic_course.body
     - field.field.node.academic_course.field_actor
     - field.field.node.academic_course.field_assignment
-    - field.field.node.academic_course.field_country
-    - field.field.node.academic_course.field_culture
     - field.field.node.academic_course.field_dates
     - field.field.node.academic_course.field_discourse
     - field.field.node.academic_course.field_historical_period
@@ -73,40 +71,6 @@ content:
       collapsible: false
       collapsed: false
       allow_existing: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
-  field_country:
-    weight: 7
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      override_labels: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
-  field_culture:
-    weight: 8
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      override_labels: false
-      collapsible: false
-      collapsed: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex

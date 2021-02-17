@@ -6,8 +6,6 @@ dependencies:
     - field.field.node.academic_course.body
     - field.field.node.academic_course.field_actor
     - field.field.node.academic_course.field_assignment
-    - field.field.node.academic_course.field_country
-    - field.field.node.academic_course.field_culture
     - field.field.node.academic_course.field_dates
     - field.field.node.academic_course.field_discourse
     - field.field.node.academic_course.field_historical_period
@@ -44,22 +42,6 @@ content:
     region: content
   field_assignment:
     weight: 114
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_country:
-    weight: 113
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_culture:
-    weight: 106
     label: above
     settings:
       link: true

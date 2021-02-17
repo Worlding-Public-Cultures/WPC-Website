@@ -4,10 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.actor_role.field_actor
-    - field.field.node.actor_role.field_uri_aat
+    - field.field.node.actor_role.field_role_type
     - node.type.actor_role
   module:
-    - link
     - user
 id: node.actor_role.default
 targetEntityType: node
@@ -22,17 +21,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_uri_aat:
+  field_role_type:
     weight: 1
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      link: true
     third_party_settings: {  }
-    type: link
+    type: entity_reference_label
     region: content
 hidden:
   links: true

@@ -3,13 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.academic_program.field_academic_programme_type
     - field.field.node.academic_program.field_course
     - field.field.node.academic_program.field_institution
-    - field.field.node.academic_program.field_type_of_program
     - node.type.academic_program
   module:
     - inline_entity_form
-    - text
 id: node.academic_program.default
 targetEntityType: node
 bundle: academic_program
@@ -21,8 +20,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_course:
+  field_academic_programme_type:
     weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_course:
+    weight: 2
     settings:
       form_mode: default
       override_labels: true
@@ -39,7 +44,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_institution:
-    weight: 2
+    weight: 1
     settings:
       form_mode: default
       override_labels: true
@@ -50,14 +55,6 @@ content:
       collapsed: false
     third_party_settings: {  }
     type: inline_entity_form_simple
-    region: content
-  field_type_of_program:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
     region: content
   status:
     type: boolean_checkbox

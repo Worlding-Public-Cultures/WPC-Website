@@ -1,16 +1,15 @@
-uuid: 528982c9-7bfe-4c65-b81f-92e821142e75
+uuid: 952daed7-6731-423f-9b0f-6059e711bfb8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_culture
-    - node.type.cultures
-    - node.type.exhibition
-id: node.exhibition.field_culture
-field_name: field_culture
+    - field.storage.node.field_broader_term
+    - node.type.subjects_terminology_
+id: node.subjects_terminology_.field_broader_term
+field_name: field_broader_term
 entity_type: node
-bundle: exhibition
-label: culture
+bundle: subjects_terminology_
+label: 'broader term'
 description: ''
 required: false
 translatable: false
@@ -20,7 +19,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      cultures: cultures
+      subjects_terminology_: subjects_terminology_
     sort:
       field: _none
     auto_create: false

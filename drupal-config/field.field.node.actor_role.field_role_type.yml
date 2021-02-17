@@ -1,16 +1,16 @@
-uuid: c7eef498-ca02-471d-b180-fea3a7b5a74e
+uuid: 437227f9-0310-4cb2-858f-86b27bfc15ab
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_country
-    - node.type.exhibition
-    - node.type.place
-id: node.exhibition.field_country
-field_name: field_country
+    - field.storage.node.field_role_type
+    - node.type.actor_role
+    - node.type.subjects_terminology_
+id: node.actor_role.field_role_type
+field_name: field_role_type
 entity_type: node
-bundle: exhibition
-label: Country/territory
+bundle: actor_role
+label: 'role type'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      place: place
+      subjects_terminology_: subjects_terminology_
     sort:
       field: _none
     auto_create: false

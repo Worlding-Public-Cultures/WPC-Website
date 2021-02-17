@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_geolocation
     - field.field.node.place.field_place_type
     - field.field.node.place.field_tgn_uri
     - node.type.place
@@ -21,6 +21,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_coordinates: true
+  field_geolocation: true
   field_place_type: true
   field_tgn_uri: true
