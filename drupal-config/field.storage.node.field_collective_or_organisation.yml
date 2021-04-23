@@ -1,0 +1,19 @@
+uuid: 5b839f65-ce49-42a3-aa27-6c89a460fc61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_collective_or_organisation
+field_name: field_collective_or_organisation
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

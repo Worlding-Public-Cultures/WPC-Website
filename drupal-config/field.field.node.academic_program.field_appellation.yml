@@ -1,0 +1,28 @@
+uuid: c716c75d-5b87-4f00-8ed8-82ae124ef496
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appellation
+    - node.type.academic_program
+    - node.type.appellation
+id: node.academic_program.field_appellation
+field_name: field_appellation
+entity_type: node
+bundle: academic_program
+label: Title(s)
+description: 'Enter the title(s) of the program e.g. original title, translated title'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

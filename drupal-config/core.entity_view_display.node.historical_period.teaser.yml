@@ -6,10 +6,17 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.historical_period.field_dates
     - field.field.node.historical_period.field_place
-    - field.field.node.historical_period.field_uri
+    - field.field.node.historical_period.field_styles_and_periods
     - node.type.historical_period
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.historical_period.teaser
 targetEntityType: node
 bundle: historical_period
@@ -23,4 +30,4 @@ content:
 hidden:
   field_dates: true
   field_place: true
-  field_uri: true
+  field_styles_and_periods: true

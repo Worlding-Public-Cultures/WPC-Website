@@ -8,9 +8,17 @@ dependencies:
     - field.field.node.place.field_tgn_uri
     - node.type.place
   module:
+    - allowed_formats
+    - field_layout
     - geolocation_leaflet
+    - layout_discovery
     - link
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.place.default
 targetEntityType: node
 bundle: place
@@ -46,7 +54,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   field_tgn_uri:

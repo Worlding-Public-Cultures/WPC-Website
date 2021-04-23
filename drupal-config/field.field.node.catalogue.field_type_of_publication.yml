@@ -1,0 +1,25 @@
+uuid: ea0a846c-819f-4d2d-a95a-8132275ae24e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_publication
+    - node.type.catalogue
+id: node.catalogue.field_type_of_publication
+field_name: field_type_of_publication
+entity_type: node
+bundle: catalogue
+label: 'Type of publication'
+description: 'Indicate whether a publication is a book, a journal article, a blog, a video, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_10
+      arguments: {  }
+field_type: entity_reference

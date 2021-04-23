@@ -4,11 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.catalogue.field_appellation
+    - field.field.node.catalogue.field_discourse
+    - field.field.node.catalogue.field_languages
     - field.field.node.catalogue.field_publication_production
+    - field.field.node.catalogue.field_styles_and_periods
+    - field.field.node.catalogue.field_type_of_publication
     - field.field.node.catalogue.field_worldcat_link
     - node.type.catalogue
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.catalogue.teaser
 targetEntityType: node
 bundle: catalogue
@@ -20,5 +32,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_appellation: true
+  field_discourse: true
+  field_languages: true
   field_publication_production: true
+  field_styles_and_periods: true
+  field_type_of_publication: true
   field_worldcat_link: true

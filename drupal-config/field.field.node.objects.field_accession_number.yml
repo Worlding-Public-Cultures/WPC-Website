@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_accession_number
     - node.type.objects
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    custom: '0'
 id: node.objects.field_accession_number
 field_name: field_accession_number
 entity_type: node

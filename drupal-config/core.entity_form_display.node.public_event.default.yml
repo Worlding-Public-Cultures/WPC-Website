@@ -4,9 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.public_event.field_actor
-    - field.field.node.public_event.field_country
+    - field.field.node.public_event.field_appellation
     - field.field.node.public_event.field_creator
-    - field.field.node.public_event.field_culture
     - field.field.node.public_event.field_dates
     - field.field.node.public_event.field_group_of_actors
     - field.field.node.public_event.field_historical_period
@@ -16,10 +15,113 @@ dependencies:
     - field.field.node.public_event.field_publication_s_
     - field.field.node.public_event.field_reference
     - field.field.node.public_event.field_sponsor
-    - field.field.node.public_event.field_subjects
     - node.type.public_event
   module:
+    - field_group
+    - field_layout
     - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_parent:
+      children:
+        - group_about
+        - group_content
+        - group_data_source
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: parent
+    group_content:
+      children:
+        - field_subjects
+        - field_historical_period
+        - field_creator
+        - field_objects
+        - field_individual_exhibitions
+        - field_publication_s_
+      parent_name: group_parent
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_about:
+      children:
+        - title
+        - field_appellation
+        - group_dates
+        - group_location
+        - field_group_of_actors
+        - field_sponsor
+        - field_actor
+      parent_name: group_parent
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: About
+    group_location:
+      children:
+        - field_place
+      parent_name: group_about
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Location
+    group_data_source:
+      children:
+        - field_reference
+      parent_name: group_parent
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Data source'
+    group_dates:
+      children:
+        - field_dates
+      parent_name: group_about
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Dates
 id: node.public_event.default
 targetEntityType: node
 bundle: public_event
@@ -27,12 +129,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 17
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_actor:
-    weight: 6
+    weight: 10
     settings:
       form_mode: default
       override_labels: true
@@ -48,25 +150,25 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_country:
-    weight: 10
+  field_appellation:
+    weight: 5
     settings:
       form_mode: default
       override_labels: true
-      label_singular: country/territory
+      label_singular: 'non-English title'
       label_plural: ''
       allow_new: true
-      allow_existing: true
       match_operator: CONTAINS
       revision: false
       collapsible: false
       collapsed: false
+      allow_existing: false
       allow_duplicate: false
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
   field_creator:
-    weight: 12
+    weight: 5
     settings:
       form_mode: default
       override_labels: true
@@ -82,25 +184,8 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_culture:
-    weight: 8
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: culture
-      label_plural: ''
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      collapsible: false
-      collapsed: false
-      allow_new: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
   field_dates:
-    weight: 2
+    weight: 9
     settings:
       form_mode: default
       revision: false
@@ -113,7 +198,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_group_of_actors:
-    weight: 4
+    weight: 8
     settings:
       form_mode: default
       override_labels: true
@@ -130,11 +215,11 @@ content:
     type: inline_entity_form_complex
     region: content
   field_historical_period:
-    weight: 9
+    weight: 3
     settings:
       form_mode: default
       override_labels: true
-      label_singular: 'historical period'
+      label_singular: 'period, style, or culture'
       label_plural: ''
       allow_existing: true
       match_operator: CONTAINS
@@ -147,7 +232,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_individual_exhibitions:
-    weight: 11
+    weight: 7
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -157,7 +242,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_objects:
-    weight: 13
+    weight: 6
     settings:
       form_mode: default
       override_labels: true
@@ -174,7 +259,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_place:
-    weight: 3
+    weight: 7
     settings:
       form_mode: default
       revision: false
@@ -187,7 +272,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_publication_s_:
-    weight: 14
+    weight: 8
     settings:
       form_mode: default
       override_labels: true
@@ -204,7 +289,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_reference:
-    weight: 15
+    weight: 2
     settings:
       form_mode: default
       revision: false
@@ -217,7 +302,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_sponsor:
-    weight: 5
+    weight: 9
     settings:
       form_mode: default
       override_labels: true
@@ -233,26 +318,9 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_subjects:
-    weight: 7
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: subject
-      label_plural: ''
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      collapsible: false
-      collapsed: false
-      allow_new: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
   title:
     type: string_textfield
-    weight: 0
+    weight: 4
     region: content
     settings:
       size: 60
@@ -260,7 +328,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

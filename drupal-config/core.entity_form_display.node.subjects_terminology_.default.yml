@@ -7,7 +7,14 @@ dependencies:
     - field.field.node.subjects_terminology_.field_uri_aat
     - node.type.subjects_terminology_
   module:
+    - field_layout
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.subjects_terminology_.default
 targetEntityType: node
 bundle: subjects_terminology_

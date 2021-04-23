@@ -9,7 +9,14 @@ dependencies:
     - field.field.node.object_production.field_place
     - node.type.object_production
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.object_production.teaser
 targetEntityType: node
 bundle: object_production

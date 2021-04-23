@@ -3,22 +3,63 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.institutions.field_uri_viaf
+    - field.field.node.institutions.field_collective_or_organisation
+    - field.field.node.institutions.field_non_english_name
+    - field.field.node.institutions.field_type_of_group
     - node.type.institutions
   module:
-    - link
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.institutions.default
 targetEntityType: node
 bundle: institutions
 mode: default
 content:
-  field_uri_viaf:
-    weight: 1
+  field_collective_or_organisation:
+    weight: 26
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      form_mode: default
+      override_labels: true
+      label_singular: 'collective or organisation'
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: link_default
+    type: inline_entity_form_complex
+    region: content
+  field_non_english_name:
+    weight: 27
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'name in non-Latin alphabet'
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_type_of_group:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   title:
     type: string_textfield

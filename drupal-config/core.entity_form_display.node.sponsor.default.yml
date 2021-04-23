@@ -7,8 +7,16 @@ dependencies:
     - field.field.node.sponsor.field_type
     - node.type.sponsor
   module:
+    - allowed_formats
+    - field_layout
     - inline_entity_form
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.sponsor.default
 targetEntityType: node
 bundle: sponsor
@@ -32,7 +40,10 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     type: text_textfield
     region: content
   title:

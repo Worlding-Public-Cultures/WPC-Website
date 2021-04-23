@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'actor role'
+name: 'Actor role'
 type: actor_role
 description: 'roles of the actors (curator, artist, speaker...)'
 help: ''

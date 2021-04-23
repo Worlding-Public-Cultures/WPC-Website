@@ -10,7 +10,7 @@ id: node.exhibition.field_historical_period
 field_name: field_historical_period
 entity_type: node
 bundle: exhibition
-label: 'Period, Culture, Territory'
+label: 'Style(s) and period(s)'
 description: ''
 required: false
 translatable: false

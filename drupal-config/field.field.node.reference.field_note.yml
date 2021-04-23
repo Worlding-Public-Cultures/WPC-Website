@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_note
     - node.type.reference
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    custom: '0'
 id: node.reference.field_note
 field_name: field_note
 entity_type: node

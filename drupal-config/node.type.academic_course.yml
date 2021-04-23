@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'academic course'
+name: Course
 type: academic_course
-description: 'Courses that part of an academic program.'
+description: 'Courses that part of an educational program.'
 help: 'Enter the title of the course. If in a language other than English, please enter the title in the original language and the English translation.'
 new_revision: true
 preview_mode: 1

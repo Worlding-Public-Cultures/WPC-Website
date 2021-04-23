@@ -1,0 +1,28 @@
+uuid: a82d9910-33d8-4eb0-80a1-f31764131bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_of_actors
+    - node.type.actor_role
+    - node.type.institutions
+id: node.actor_role.field_group_of_actors
+field_name: field_group_of_actors
+entity_type: node
+bundle: actor_role
+label: 'group of actors'
+description: 'Add the information about the group of actors (collective, organisation, institution, etc.)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institutions: institutions
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

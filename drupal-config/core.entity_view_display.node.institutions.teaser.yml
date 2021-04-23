@@ -4,10 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.institutions.field_uri_viaf
+    - field.field.node.institutions.field_collective_or_organisation
+    - field.field.node.institutions.field_non_english_name
+    - field.field.node.institutions.field_type_of_group
     - node.type.institutions
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.institutions.teaser
 targetEntityType: node
 bundle: institutions
@@ -19,4 +28,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_uri_viaf: true
+  field_collective_or_organisation: true
+  field_non_english_name: true
+  field_type_of_group: true

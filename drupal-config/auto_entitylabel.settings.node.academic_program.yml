@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_appellation:0]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - node.type.academic_program

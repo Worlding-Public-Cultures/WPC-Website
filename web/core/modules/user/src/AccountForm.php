@@ -130,7 +130,7 @@ abstract class AccountForm extends ContentEntityForm implements TrustedCallbackI
       // To skip the current password field, the user must have logged in via a
       // one-time link and have the token in the URL. Store this in $form_state
       // so it persists even on subsequent Ajax requests.
-      if (!$form_state->get('user_pass_reset') && ($token = $this->getRequest()->get('pass-reset-token'))) {
+      if (!$form_state->get('user_pass_reset') && ($token = $this->getRequest()->query->get('pass-reset-token'))) {
         $session_key = 'pass_reset_' . $account->id();
         $user_pass_reset = isset($_SESSION[$session_key]) && hash_equals($_SESSION[$session_key], $token);
         $form_state->set('user_pass_reset', $user_pass_reset);
@@ -272,8 +272,11 @@ abstract class AccountForm extends ContentEntityForm implements TrustedCallbackI
     // separately, assume that the user profile data is in the user's preferred
     // language. This entity builder provides that synchronization. For
     // use-cases where this synchronization is not desired, a module can alter
-    // or remove this item.
-    $form['#entity_builders']['sync_user_langcode'] = '::syncUserLangcode';
+    // or remove this item. Sync user langcode only when a user registers and
+    // not when a user is updated or translated.
+    if ($register) {
+      $form['#entity_builders']['sync_user_langcode'] = '::syncUserLangcode';
+    }
 
     $system_date_config = \Drupal::config('system.date');
     $form['timezone'] = [

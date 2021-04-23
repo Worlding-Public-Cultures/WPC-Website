@@ -1,0 +1,25 @@
+uuid: 645fdff4-7551-41a4-90f9-cb41aa110869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collective_or_organisation
+    - node.type.institutions
+id: node.institutions.field_collective_or_organisation
+field_name: field_collective_or_organisation
+entity_type: node
+bundle: institutions
+label: 'Collective or Organisation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_6
+      arguments: {  }
+field_type: entity_reference

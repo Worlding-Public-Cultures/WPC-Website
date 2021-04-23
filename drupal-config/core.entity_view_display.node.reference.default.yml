@@ -8,8 +8,15 @@ dependencies:
     - field.field.node.reference.field_note
     - node.type.reference
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.reference.default
 targetEntityType: node
 bundle: reference

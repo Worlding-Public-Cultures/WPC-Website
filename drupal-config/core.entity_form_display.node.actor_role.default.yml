@@ -4,10 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.actor_role.field_actor
+    - field.field.node.actor_role.field_group_of_actors
     - field.field.node.actor_role.field_role_type
     - node.type.actor_role
   module:
+    - field_layout
     - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.actor_role.default
 targetEntityType: node
 bundle: actor_role
@@ -20,6 +28,23 @@ content:
       override_labels: true
       label_singular: actor
       label_plural: actors
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_group_of_actors:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'group of actors'
+      label_plural: 'groups of actors'
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS

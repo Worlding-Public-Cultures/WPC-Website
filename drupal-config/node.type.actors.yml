@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: actor
+name: Actor
 type: actors
 description: 'curators, scholars, speakers, authors...'
 help: ''

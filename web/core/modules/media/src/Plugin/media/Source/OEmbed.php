@@ -301,7 +301,7 @@ class OEmbed extends MediaSourceBase implements OEmbedInterface {
     $domain = $this->configFactory->get('media.settings')->get('iframe_domain');
     if (!$this->iFrameUrlHelper->isSecure($domain)) {
       array_unshift($form, [
-        '#markup' => '<p>' . $this->t('It is potentially insecure to display oEmbed content in a frame that is served from the same domain as your main Drupal site, as this may allow execution of third-party code. <a href=":url" target="_blank">You can specify a different domain for serving oEmbed content here</a> (opens in a new window).', [
+        '#markup' => '<p>' . $this->t('It is potentially insecure to display oEmbed content in a frame that is served from the same domain as your main Drupal site, as this may allow execution of third-party code. <a href=":url">You can specify a different domain for serving oEmbed content in the Media settings</a>.', [
           ':url' => Url::fromRoute('media.settings')->setAbsolute()->toString(),
         ]) . '</p>',
       ]);
@@ -390,10 +390,14 @@ class OEmbed extends MediaSourceBase implements OEmbedInterface {
     }
     $remote_thumbnail_url = $remote_thumbnail_url->toString();
 
+    // Remove the query string, since we do not want to include it in the local
+    // thumbnail URI.
+    $local_thumbnail_url = parse_url($remote_thumbnail_url, PHP_URL_PATH);
+
     // Compute the local thumbnail URI, regardless of whether or not it exists.
     $configuration = $this->getConfiguration();
     $directory = $configuration['thumbnails_directory'];
-    $local_thumbnail_uri = "$directory/" . Crypt::hashBase64($remote_thumbnail_url) . '.' . pathinfo($remote_thumbnail_url, PATHINFO_EXTENSION);
+    $local_thumbnail_uri = "$directory/" . Crypt::hashBase64($local_thumbnail_url) . '.' . pathinfo($local_thumbnail_url, PATHINFO_EXTENSION);
 
     // If the local thumbnail already exists, return its URI.
     if (file_exists($local_thumbnail_uri)) {

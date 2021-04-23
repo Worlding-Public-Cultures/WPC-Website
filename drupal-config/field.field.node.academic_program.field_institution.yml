@@ -10,8 +10,8 @@ id: node.academic_program.field_institution
 field_name: field_institution
 entity_type: node
 bundle: academic_program
-label: institution
-description: ''
+label: Organisation
+description: 'Enter information about the organisation that manages the program'
 required: false
 translatable: true
 default_value: {  }

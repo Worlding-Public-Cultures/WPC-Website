@@ -1,0 +1,18 @@
+uuid: d5d1d441-c45f-480a-87f7-ab9325b4aea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.appellation
+id: node.appellation.title
+field_name: title
+entity_type: node
+bundle: appellation
+label: Appellation
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

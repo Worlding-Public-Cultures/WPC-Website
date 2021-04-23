@@ -11,8 +11,8 @@ id: node.catalogue.field_worldcat_link
 field_name: field_worldcat_link
 entity_type: node
 bundle: catalogue
-label: 'WorldCat link'
-description: 'Enter the permalink of the WoldCat entry'
+label: Reference
+description: 'Enter the permalink of the WoldCat entry, or if not on WorldCat, enter a link to the publication or with information about the publication.'
 required: false
 translatable: false
 default_value: {  }

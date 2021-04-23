@@ -9,7 +9,7 @@ id: node.academic_course.field_languages
 field_name: field_languages
 entity_type: node
 bundle: academic_course
-label: language
+label: Language
 description: ''
 required: false
 translatable: false

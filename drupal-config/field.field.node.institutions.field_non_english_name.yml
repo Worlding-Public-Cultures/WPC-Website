@@ -1,0 +1,28 @@
+uuid: 0b55a84b-fd4a-4d2d-8de8-73d31b0efb93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_non_english_name
+    - node.type.appellation
+    - node.type.institutions
+id: node.institutions.field_non_english_name
+field_name: field_non_english_name
+entity_type: node
+bundle: institutions
+label: 'Other name(s)'
+description: 'Enter the name of the group of actors (institution, organisation, collective, etc.) if in a non-Latin alphabet'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

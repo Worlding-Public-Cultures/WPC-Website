@@ -5,11 +5,17 @@ dependencies:
   config:
     - field.field.node.historical_period.field_dates
     - field.field.node.historical_period.field_place
-    - field.field.node.historical_period.field_uri
+    - field.field.node.historical_period.field_styles_and_periods
     - node.type.historical_period
   module:
-    - link
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.historical_period.default
 targetEntityType: node
 bundle: historical_period
@@ -31,17 +37,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_uri:
-    weight: 103
+  field_styles_and_periods:
+    weight: 105
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      link: true
     third_party_settings: {  }
-    type: link
+    type: entity_reference_label
     region: content
   links:
     weight: 100

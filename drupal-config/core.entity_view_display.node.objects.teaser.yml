@@ -7,10 +7,17 @@ dependencies:
     - field.field.node.objects.field_accession_number
     - field.field.node.objects.field_link
     - field.field.node.objects.field_object_creation
-    - field.field.node.objects.field_title
+    - field.field.node.objects.field_tit
     - node.type.objects
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.objects.teaser
 targetEntityType: node
 bundle: objects
@@ -25,4 +32,4 @@ hidden:
   field_accession_number: true
   field_link: true
   field_object_creation: true
-  field_title: true
+  field_tit: true

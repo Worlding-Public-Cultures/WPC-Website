@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Publication
 type: catalogue
-description: 'Enter publication info i.e. the catalogue of an exhibition, a book studied at a course, the proceedings of a conference, etc.'
+description: 'Enter publication info i.e. the catalogue of an exhibition, a book studied at a course, the proceedings of a conference, a blog, etc.'
 help: ''
 new_revision: true
 preview_mode: 1

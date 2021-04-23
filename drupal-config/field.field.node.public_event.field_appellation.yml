@@ -1,0 +1,28 @@
+uuid: ed1bfdbb-172e-4e33-ba2e-4065ce74641e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appellation
+    - node.type.appellation
+    - node.type.public_event
+id: node.public_event.field_appellation
+field_name: field_appellation
+entity_type: node
+bundle: public_event
+label: Title(s)
+description: 'Enter title(s) of the event e.g. original title, title translated to English. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

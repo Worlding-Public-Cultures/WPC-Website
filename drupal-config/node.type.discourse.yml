@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: discourse
+name: Discourse
 type: discourse
 description: 'Discourse and conceptual ideas of an artist or author'
 help: ''

@@ -1,0 +1,25 @@
+uuid: f9c9e725-0956-482e-8338-c408bae45c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_styles_and_periods
+    - node.type.historical_period
+id: node.historical_period.field_styles_and_periods
+field_name: field_styles_and_periods
+entity_type: node
+bundle: historical_period
+label: 'styles and periods'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_8
+      arguments: {  }
+field_type: entity_reference

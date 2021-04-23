@@ -1,0 +1,25 @@
+uuid: 76b67a9e-125f-4acf-a24f-68cda02d31db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_languages
+    - node.type.catalogue
+id: node.catalogue.field_languages
+field_name: field_languages
+entity_type: node
+bundle: catalogue
+label: Language
+description: 'Enter the language of the publication'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_3
+      arguments: {  }
+field_type: entity_reference

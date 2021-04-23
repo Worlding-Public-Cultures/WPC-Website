@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_copyright_info
     - node.type.reference
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    custom: '0'
 id: node.reference.field_copyright_info
 field_name: field_copyright_info
 entity_type: node
