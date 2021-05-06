@@ -6,7 +6,14 @@ dependencies:
     - field.field.node.discourse.field_artist
     - node.type.discourse
   module:
+    - field_layout
     - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.discourse.default
 targetEntityType: node
 bundle: discourse
@@ -35,7 +42,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Discourse of [artist name]'
     third_party_settings: {  }
 hidden:
   created: true

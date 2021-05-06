@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.academic_course.body
     - field.field.node.academic_course.field_actor
+    - field.field.node.academic_course.field_appellation
     - field.field.node.academic_course.field_assignment
     - field.field.node.academic_course.field_dates
     - field.field.node.academic_course.field_discourse
@@ -18,8 +19,86 @@ dependencies:
     - field.field.node.academic_course.field_subjects
     - node.type.academic_course
   module:
+    - allowed_formats
+    - field_group
+    - field_layout
     - inline_entity_form
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_parent:
+      children:
+        - group_about_the_course
+        - group_contents_of_the_course
+        - group_reference
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: parent
+    group_about_the_course:
+      children:
+        - title
+        - field_appellation
+        - body
+        - field_dates
+        - field_location
+        - field_actor
+        - field_languages
+        - field_assignment
+      parent_name: group_parent
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'About the course'
+    group_contents_of_the_course:
+      children:
+        - field_subjects
+        - field_historical_period
+        - field_discourse
+        - field_objects
+        - field_individual_exhibitions
+        - field_publication_s_
+      parent_name: group_parent
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Contents of the course'
+    group_reference:
+      children:
+        - field_reference
+      parent_name: group_parent
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Reference
 id: node.academic_course.default
 targetEntityType: node
 bundle: academic_course
@@ -27,22 +106,25 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 5
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
+      summary_rows: 3
       show_summary: false
-    third_party_settings: {  }
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
     region: content
   created:
     type: datetime_timestamp
-    weight: 16
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_actor:
-    weight: 4
+    weight: 8
     settings:
       form_mode: default
       override_labels: true
@@ -58,12 +140,12 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
-  field_assignment:
-    weight: 11
+  field_appellation:
+    weight: 4
     settings:
       form_mode: default
       override_labels: true
-      label_singular: assignment
+      label_singular: title
       label_plural: ''
       allow_new: true
       match_operator: CONTAINS
@@ -75,8 +157,25 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_complex
     region: content
+  field_assignment:
+    weight: 10
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: assignment
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
   field_dates:
-    weight: 2
+    weight: 6
     settings:
       form_mode: default
       revision: false
@@ -89,7 +188,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_discourse:
-    weight: 10
+    weight: 4
     settings:
       form_mode: default
       override_labels: true
@@ -106,11 +205,11 @@ content:
     type: inline_entity_form_complex
     region: content
   field_historical_period:
-    weight: 9
+    weight: 3
     settings:
       form_mode: default
       override_labels: true
-      label_singular: 'historical period'
+      label_singular: 'Style, period, or culture'
       label_plural: ''
       allow_existing: true
       match_operator: CONTAINS
@@ -123,7 +222,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_individual_exhibitions:
-    weight: 13
+    weight: 6
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -133,7 +232,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_languages:
-    weight: 6
+    weight: 9
     settings:
       form_mode: default
       override_labels: true
@@ -150,7 +249,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_location:
-    weight: 3
+    weight: 7
     settings:
       form_mode: default
       revision: false
@@ -163,7 +262,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_objects:
-    weight: 12
+    weight: 5
     settings:
       form_mode: default
       override_labels: true
@@ -180,7 +279,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_publication_s_:
-    weight: 14
+    weight: 7
     settings:
       form_mode: default
       override_labels: true
@@ -197,7 +296,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_reference:
-    weight: 15
+    weight: 7
     settings:
       form_mode: default
       revision: false
@@ -210,7 +309,7 @@ content:
     type: inline_entity_form_simple
     region: content
   field_subjects:
-    weight: 5
+    weight: 1
     settings:
       form_mode: default
       override_labels: true
@@ -230,12 +329,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 3
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 3
     region: content
     settings:
       size: 60
@@ -243,7 +342,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

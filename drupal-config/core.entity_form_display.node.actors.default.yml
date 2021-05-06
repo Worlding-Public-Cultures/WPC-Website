@@ -5,16 +5,24 @@ dependencies:
   config:
     - field.field.node.actors.field_academic_title
     - field.field.node.actors.field_institutions
+    - field.field.node.actors.field_non_english_name
     - node.type.actors
   module:
+    - field_layout
     - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.actors.default
 targetEntityType: node
 bundle: actors
 mode: default
 content:
   field_academic_title:
-    weight: 26
+    weight: 3
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -24,7 +32,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_institutions:
-    weight: 3
+    weight: 2
     settings:
       form_mode: default
       label_singular: ''
@@ -34,6 +42,23 @@ content:
       match_operator: CONTAINS
       revision: false
       override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_non_english_name:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'non-Latin alphabet name'
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
       collapsible: false
       collapsed: false
       allow_duplicate: false

@@ -9,7 +9,14 @@ dependencies:
     - field.field.node.catalogue_creation.field_group_of_actors
     - node.type.catalogue_creation
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.catalogue_creation.teaser
 targetEntityType: node
 bundle: catalogue_creation

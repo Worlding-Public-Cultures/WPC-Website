@@ -3,27 +3,47 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.institutions.field_uri_viaf
+    - field.field.node.institutions.field_collective_or_organisation
+    - field.field.node.institutions.field_non_english_name
+    - field.field.node.institutions.field_type_of_group
     - node.type.institutions
   module:
-    - link
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.institutions.default
 targetEntityType: node
 bundle: institutions
 mode: default
 content:
-  field_uri_viaf:
-    weight: 0
+  field_collective_or_organisation:
+    weight: 1
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      link: true
     third_party_settings: {  }
-    type: link
+    type: entity_reference_label
+    region: content
+  field_non_english_name:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type_of_group:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden:
   links: true

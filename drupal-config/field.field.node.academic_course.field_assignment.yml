@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_assignment
     - node.type.academic_course
-    - node.type.assignment
 id: node.academic_course.field_assignment
 field_name: field_assignment
 entity_type: node
@@ -17,12 +16,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      assignment: assignment
-    sort:
-      field: _none
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_7
+      arguments: {  }
 field_type: entity_reference

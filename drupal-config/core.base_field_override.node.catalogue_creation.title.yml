@@ -8,7 +8,7 @@ id: node.catalogue_creation.title
 field_name: title
 entity_type: node
 bundle: catalogue_creation
-label: 'Bibliographic information'
+label: 'Production of the publication'
 description: ''
 required: true
 translatable: true

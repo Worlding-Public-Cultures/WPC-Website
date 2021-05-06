@@ -11,7 +11,7 @@ field_name: field_actor
 entity_type: node
 bundle: academic_course
 label: Instructor
-description: 'Enter the information about the instructor(s) of the course'
+description: 'Enter the information about the instructor(s) of the course. If the names of the individual instructors are known, enter "actor" data, if you only know the name of the collective, enter  "group of actors" data.'
 required: false
 translatable: true
 default_value: {  }

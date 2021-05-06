@@ -4,10 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.traveling_exhibition.field_appellation
     - field.field.node.traveling_exhibition.field_individual_exhibitions
     - node.type.traveling_exhibition
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.traveling_exhibition.teaser
 targetEntityType: node
 bundle: traveling_exhibition
@@ -19,4 +27,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_appellation: true
   field_individual_exhibitions: true

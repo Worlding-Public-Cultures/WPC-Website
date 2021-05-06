@@ -6,8 +6,15 @@ dependencies:
     - field.field.node.assignment.field_type
     - node.type.assignment
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.assignment.default
 targetEntityType: node
 bundle: assignment

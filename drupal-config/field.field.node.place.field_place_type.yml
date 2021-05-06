@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_place_type
     - node.type.place
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    custom: '0'
 id: node.place.field_place_type
 field_name: field_place_type
 entity_type: node

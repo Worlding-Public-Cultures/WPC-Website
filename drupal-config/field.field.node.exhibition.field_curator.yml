@@ -10,8 +10,8 @@ id: node.exhibition.field_curator
 field_name: field_curator
 entity_type: node
 bundle: exhibition
-label: curator
-description: ''
+label: Curator
+description: 'Enter the information about the curator(s) of the exhibition. If individual curators are known, click on "Add new actor" but if only the name of the curatorial collective/group is known, click on "Add new group of actors".'
 required: false
 translatable: false
 default_value: {  }

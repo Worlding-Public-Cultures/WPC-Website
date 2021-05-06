@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.academic_course.body
     - field.field.node.academic_course.field_actor
+    - field.field.node.academic_course.field_appellation
     - field.field.node.academic_course.field_assignment
     - field.field.node.academic_course.field_dates
     - field.field.node.academic_course.field_discourse
@@ -19,8 +20,15 @@ dependencies:
     - field.field.node.academic_course.field_subjects
     - node.type.academic_course
   module:
+    - field_layout
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.academic_course.teaser
 targetEntityType: node
 bundle: academic_course
@@ -41,6 +49,7 @@ content:
     region: content
 hidden:
   field_actor: true
+  field_appellation: true
   field_assignment: true
   field_dates: true
   field_discourse: true

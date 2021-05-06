@@ -1,0 +1,28 @@
+uuid: 32199a0d-e2eb-41b0-a22d-d34314d27a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_non_english_name
+    - node.type.actors
+    - node.type.appellation
+id: node.actors.field_non_english_name
+field_name: field_non_english_name
+entity_type: node
+bundle: actors
+label: 'Non-Latin alphabet name'
+description: 'Add the name of the actor if in a non-Latin alphabet'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

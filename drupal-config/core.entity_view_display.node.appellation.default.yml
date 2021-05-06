@@ -1,0 +1,35 @@
+uuid: 6372f4fa-9e3f-4b89-b9fe-0493f64d9214
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.appellation.field_languages
+    - node.type.appellation
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.appellation.default
+targetEntityType: node
+bundle: appellation
+mode: default
+content:
+  field_languages:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

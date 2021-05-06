@@ -8,7 +8,14 @@ dependencies:
     - field.field.node.sponsor.field_type
     - node.type.sponsor
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor

@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_dates
     - node.type.dates
-    - node.type.historical_period
     - node.type.object_production
 id: node.object_production.field_dates
 field_name: field_dates
@@ -22,7 +21,6 @@ settings:
   handler_settings:
     target_bundles:
       dates: dates
-      historical_period: historical_period
     sort:
       field: _none
     auto_create: false

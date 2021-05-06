@@ -160,7 +160,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: 'http://vocab.getty.edu/aat/300404126'
+          value: 'http://vocab.getty.edu/aat/300220751'
           group: 1
           exposed: false
           expose:
@@ -235,6 +235,27 @@ display:
     display_plugin: entity_reference
     id: entity_reference_1
     display_title: 'entity reference terminology - subject'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_10:
+    display_plugin: entity_reference
+    id: entity_reference_10
+    display_title: 'entity reference terminology - types of publication'
     position: 1
     display_options:
       display_extenders: {  }
@@ -338,6 +359,7 @@ display:
         operator: AND
         groups:
           1: AND
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -620,6 +642,90 @@ display:
         operator: AND
         groups:
           1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_6:
+    display_plugin: entity_reference
+    id: entity_reference_6
+    display_title: 'entity reference terminology - collective or organisation'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_7:
+    display_plugin: entity_reference
+    id: entity_reference_7
+    display_title: 'entity reference terminology - assignment '
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_8:
+    display_plugin: entity_reference
+    id: entity_reference_8
+    display_title: 'entity reference terminology - periods and styles'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  entity_reference_9:
+    display_plugin: entity_reference
+    id: entity_reference_9
+    display_title: 'entity reference terminology - type of group of actors'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

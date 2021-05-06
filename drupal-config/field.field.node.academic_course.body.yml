@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.body
     - node.type.academic_course
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    custom: '0'
 id: node.academic_course.body
 field_name: body
 entity_type: node

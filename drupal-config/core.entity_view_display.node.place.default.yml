@@ -8,10 +8,17 @@ dependencies:
     - field.field.node.place.field_tgn_uri
     - node.type.place
   module:
+    - field_layout
     - geolocation
+    - layout_discovery
     - link
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.place.default
 targetEntityType: node
 bundle: place

@@ -10,8 +10,8 @@ id: node.public_event.field_historical_period
 field_name: field_historical_period
 entity_type: node
 bundle: public_event
-label: 'Historical Period(s)'
-description: 'Enter the terminology used to define the historical period(s) addressed by the public event'
+label: 'Style(s) and period(s)'
+description: 'Enter the terminology used to define the historical period(s), style(s), and culture(s) addressed in the public event'
 required: false
 translatable: true
 default_value: {  }

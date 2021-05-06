@@ -10,8 +10,8 @@ id: node.exhibition.field_sponsor
 field_name: field_sponsor
 entity_type: node
 bundle: exhibition
-label: sponsor
-description: ''
+label: Sponsor
+description: 'Enter the information about the sponsor(s) of the exbition'
 required: false
 translatable: false
 default_value: {  }

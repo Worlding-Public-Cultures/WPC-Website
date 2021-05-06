@@ -5,18 +5,24 @@ dependencies:
   config:
     - field.field.node.historical_period.field_dates
     - field.field.node.historical_period.field_place
-    - field.field.node.historical_period.field_uri
+    - field.field.node.historical_period.field_styles_and_periods
     - node.type.historical_period
   module:
+    - field_layout
     - inline_entity_form
-    - link
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.historical_period.default
 targetEntityType: node
 bundle: historical_period
 mode: default
 content:
   field_dates:
-    weight: 0
+    weight: 1
     settings:
       form_mode: default
       revision: false
@@ -29,26 +35,42 @@ content:
     type: inline_entity_form_simple
     region: content
   field_place:
-    weight: 26
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_uri:
     weight: 2
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      match_operator: CONTAINS
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
     third_party_settings: {  }
-    type: link_default
+    type: inline_entity_form_complex
+    region: content
+  field_styles_and_periods:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
     region: content
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60

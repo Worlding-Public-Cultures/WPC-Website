@@ -6,9 +6,17 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.actors.field_academic_title
     - field.field.node.actors.field_institutions
+    - field.field.node.actors.field_non_english_name
     - node.type.actors
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.actors.teaser
 targetEntityType: node
 bundle: actors
@@ -22,3 +30,4 @@ content:
 hidden:
   field_academic_title: true
   field_institutions: true
+  field_non_english_name: true

@@ -1,0 +1,28 @@
+uuid: 9fabb208-de40-4abe-8742-466391bbb534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appellation
+    - node.type.appellation
+    - node.type.traveling_exhibition
+id: node.traveling_exhibition.field_appellation
+field_name: field_appellation
+entity_type: node
+bundle: traveling_exhibition
+label: Title(s)
+description: 'Add the title(s) of the traveling exhibition e.g. Original title, title translated to English, etc. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

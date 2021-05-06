@@ -3,19 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.catalogue.field_appellation
+    - field.field.node.catalogue.field_discourse
+    - field.field.node.catalogue.field_languages
     - field.field.node.catalogue.field_publication_production
+    - field.field.node.catalogue.field_styles_and_periods
+    - field.field.node.catalogue.field_type_of_publication
     - field.field.node.catalogue.field_worldcat_link
     - node.type.catalogue
   module:
+    - field_layout
+    - layout_discovery
     - link
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.catalogue.default
 targetEntityType: node
 bundle: catalogue
 mode: default
 content:
+  field_appellation:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_discourse:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_languages:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_publication_production:
     weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_styles_and_periods:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type_of_publication:
+    weight: 113
     label: above
     settings:
       link: true

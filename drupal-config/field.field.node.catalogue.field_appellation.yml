@@ -1,0 +1,28 @@
+uuid: d7289478-a7a6-4f30-9901-ba8321a0277a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appellation
+    - node.type.appellation
+    - node.type.catalogue
+id: node.catalogue.field_appellation
+field_name: field_appellation
+entity_type: node
+bundle: catalogue
+label: Title(s)
+description: 'Enter the title(s) of the publication e.g. original title, title translated to English, etc. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      appellation: appellation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

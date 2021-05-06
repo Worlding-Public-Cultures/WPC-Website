@@ -5,9 +5,17 @@ dependencies:
   config:
     - field.field.node.actors.field_academic_title
     - field.field.node.actors.field_institutions
+    - field.field.node.actors.field_non_english_name
     - node.type.actors
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.actors.default
 targetEntityType: node
 bundle: actors
@@ -23,6 +31,14 @@ content:
     region: content
   field_institutions:
     weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_non_english_name:
+    weight: 105
     label: above
     settings:
       link: true

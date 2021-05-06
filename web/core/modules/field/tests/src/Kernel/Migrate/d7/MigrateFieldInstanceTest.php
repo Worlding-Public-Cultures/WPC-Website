@@ -131,6 +131,7 @@ class MigrateFieldInstanceTest extends MigrateDrupal7TestBase {
     $this->assertEntity('node.test_content_type.field_term_reference', 'Term Reference', 'entity_reference', FALSE, FALSE);
     $this->assertEntity('node.test_content_type.field_text', 'Text', 'string', FALSE, FALSE);
     $this->assertEntity('comment.comment_node_test_content_type.field_integer', 'Integer', 'integer', FALSE, TRUE);
+    $this->assertEntity('comment.comment_node_a_thirty_two_char.comment_body', 'Comment', 'text_long', TRUE, FALSE);
     $this->assertEntity('user.user.field_file', 'File', 'file', FALSE, FALSE);
 
     $this->assertLinkFields('node.test_content_type.field_link', DRUPAL_OPTIONAL);
@@ -167,12 +168,8 @@ class MigrateFieldInstanceTest extends MigrateDrupal7TestBase {
     $this->assertEntity('node.article.field_vocab_fixed', 'vocab_fixed', 'entity_reference', FALSE, TRUE);
     $this->assertEntity('node.article.field_vocab_localize', 'vocab_localize', 'entity_reference', FALSE, FALSE);
     $this->assertEntity('node.article.field_vocab_translate', 'vocab_translate', 'entity_reference', FALSE, TRUE);
-  }
 
-  /**
-   * Tests the migration of text field instances with different text processing.
-   */
-  public function testTextFieldInstances() {
+    // Test migration of text field instances with different text processing.
     // All text and text_long field instances using a field base that has only
     // plain text instances should be migrated to string and string_long fields.
     // All text_with_summary field instances using a field base that has only

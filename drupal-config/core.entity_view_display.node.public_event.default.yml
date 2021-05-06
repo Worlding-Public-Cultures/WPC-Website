@@ -4,9 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.public_event.field_actor
-    - field.field.node.public_event.field_country
+    - field.field.node.public_event.field_appellation
     - field.field.node.public_event.field_creator
-    - field.field.node.public_event.field_culture
     - field.field.node.public_event.field_dates
     - field.field.node.public_event.field_group_of_actors
     - field.field.node.public_event.field_historical_period
@@ -16,10 +15,16 @@ dependencies:
     - field.field.node.public_event.field_publication_s_
     - field.field.node.public_event.field_reference
     - field.field.node.public_event.field_sponsor
-    - field.field.node.public_event.field_subjects
     - node.type.public_event
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.public_event.default
 targetEntityType: node
 bundle: public_event
@@ -33,8 +38,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_country:
-    weight: 111
+  field_appellation:
+    weight: 118
     label: above
     settings:
       link: true
@@ -43,14 +48,6 @@ content:
     region: content
   field_creator:
     weight: 113
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_culture:
-    weight: 109
     label: above
     settings:
       link: true
@@ -123,14 +120,6 @@ content:
     region: content
   field_sponsor:
     weight: 106
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_subjects:
-    weight: 108
     label: above
     settings:
       link: true

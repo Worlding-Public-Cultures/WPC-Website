@@ -1,0 +1,25 @@
+uuid: 48489564-54e1-4d11-a071-a6c495e4d412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_group
+    - node.type.institutions
+id: node.institutions.field_type_of_group
+field_name: field_type_of_group
+entity_type: node
+bundle: institutions
+label: 'Type of group'
+description: 'Indicate the type of group of actors e.g. museum, association, artist collective, activist group, etc. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_reference_terminology
+      display_name: entity_reference_9
+      arguments: {  }
+field_type: entity_reference

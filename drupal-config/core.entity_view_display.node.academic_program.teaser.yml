@@ -5,11 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.academic_program.field_academic_programme_type
+    - field.field.node.academic_program.field_appellation
     - field.field.node.academic_program.field_course
     - field.field.node.academic_program.field_institution
     - node.type.academic_program
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.academic_program.teaser
 targetEntityType: node
 bundle: academic_program
@@ -22,5 +30,6 @@ content:
     region: content
 hidden:
   field_academic_programme_type: true
+  field_appellation: true
   field_course: true
   field_institution: true

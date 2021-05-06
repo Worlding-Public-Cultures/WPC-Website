@@ -1,0 +1,53 @@
+uuid: 6350aee0-3a35-4b92-beb5-ce242268e3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.appellation.field_languages
+    - node.type.appellation
+  module:
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.appellation.default
+targetEntityType: node
+bundle: appellation
+mode: default
+content:
+  field_languages:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: language
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

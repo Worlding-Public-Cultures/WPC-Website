@@ -1,0 +1,28 @@
+uuid: 503669e8-7ea9-4ca7-b3c6-66733bef80a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_languages
+    - node.type.appellation
+    - node.type.subjects_terminology_
+id: node.appellation.field_languages
+field_name: field_languages
+entity_type: node
+bundle: appellation
+label: Language
+description: 'Enter the language of the title, name, etc. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      subjects_terminology_: subjects_terminology_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

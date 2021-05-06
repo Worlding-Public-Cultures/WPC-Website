@@ -1,0 +1,28 @@
+uuid: 68ce7e4f-1bb1-4e53-8743-1d4fb5eee5b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discourse
+    - node.type.catalogue
+    - node.type.discourse
+id: node.catalogue.field_discourse
+field_name: field_discourse
+entity_type: node
+bundle: catalogue
+label: discourse
+description: 'Enter the artist(s) whose discourse is the subject of the publication'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      discourse: discourse
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

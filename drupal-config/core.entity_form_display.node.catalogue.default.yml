@@ -3,19 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.catalogue.field_appellation
+    - field.field.node.catalogue.field_discourse
+    - field.field.node.catalogue.field_languages
     - field.field.node.catalogue.field_publication_production
+    - field.field.node.catalogue.field_styles_and_periods
+    - field.field.node.catalogue.field_type_of_publication
     - field.field.node.catalogue.field_worldcat_link
     - node.type.catalogue
   module:
+    - field_layout
     - inline_entity_form
+    - layout_discovery
     - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.catalogue.default
 targetEntityType: node
 bundle: catalogue
 mode: default
 content:
+  field_appellation:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'non-English title'
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_discourse:
+    weight: 29
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: discourse
+      label_plural: discourses
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_languages:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_publication_production:
-    weight: 26
+    weight: 4
     settings:
       form_mode: default
       revision: false
@@ -27,8 +79,31 @@ content:
     third_party_settings: {  }
     type: inline_entity_form_simple
     region: content
+  field_styles_and_periods:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'style or period'
+      label_plural: 'styles or periods'
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_type_of_publication:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_worldcat_link:
-    weight: 1
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''

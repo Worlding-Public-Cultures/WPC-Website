@@ -8,7 +8,7 @@ id: node.institutions.title
 field_name: title
 entity_type: node
 bundle: institutions
-label: 'Organisation, institution, group'
+label: 'Collective or Organisation'
 description: ''
 required: true
 translatable: true
